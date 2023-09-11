@@ -1,5 +1,5 @@
 * {font-family:"sans-serif", "Arial", "monospace"!important;word-wrap:break-word!important;}
-*, a, button, body { cursor: url('cursor.png'), auto!important;	}
+*, a, button, body { cursor: url('https://venith.net/Media/cursor.png'), auto!important;	}
 body {background-color:rgb(35, 51, 35);margin:0px;color:white!important;font-size:12px!important;}
 
 .con {max-width:800px;margin:0px auto;}

@@ -16,5 +16,5 @@ a:hover {background-color:black!important;color:rgb(19, 235, 170)!important;}
 [id]:target {display:block}
 
 IMG {max-width:100%;height:auto}
-IMG[src="Media/Vlogo.jpg"] {width:42px;float:left}
+IMG[src="https://venith.net/Media/Vlogo.jpg"] {width:42px;float:left}
 audio {width:99%}

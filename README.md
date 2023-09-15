@@ -2,4 +2,4 @@
 Venith.NET Homepage.\
 https://venith.net
 
-![Venith](https://venith.net/Media/Vlogo.jpg)
+![Venith](https://venith.net/Media/Vlogo.png)

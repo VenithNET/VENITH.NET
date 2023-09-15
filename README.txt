@@ -1,5 +1,3 @@
-# VENITH NETWORK Homepage
+# ACCESS TO VENITH NETWORK GRANTED
 WELCOME TO THE NETWORK!
 https://venith.net
-
-![Venith](https://venith.net/Media/Vlogo.png)

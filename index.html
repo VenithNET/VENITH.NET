@@ -18,6 +18,21 @@
         <!-- Other Metadata -->
         <meta property="twitter:creator" content="@DigitalCheeseYT">
         <meta property="twitter:site" content="@DigitalCheeseYT">
+	    <style>
+        /* CSS for the popup */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+	    </style>
     </head>
 
 
@@ -41,7 +56,8 @@
 				<a href="https://social.venith.net/"> <img class="portal-image" src="https://venith.net/Media/lemmy.png" alt="Portal Image 1" width="176" height="176"></a>
 				<a href="http://chat.venith.net:8901/"> <img class="portal-image" src="https://venith.net/Media/chat.png" alt="Portal Image 1" width="176" height="176"></a>
 				<a href="http://git.venith.net:1869/"> <img class="portal-image" src="https://venith.net/Media/gitea.png" alt="Portal Image 1" width="176" height="176"></a>
-				<a href="https://mattthetekie.surge.sh/redmi.html"> <img class="portal-image" src="https://venith.net/Media/mc.png" alt="Portal Image 1" width="176" height="176"></a>
+				<a href="#"> <img class="portal-image" src="https://venith.net/Media/mc.png" alt="Portal Image 1" width="176" height="176"></a>
+				<button id="popupButton">Click me for a popup</button>
 				<a href="https://status.venith.net/status/crazyhelltech"> <img class="portal-image" src="https://venith.net/Media/stats.png" alt="Portal Image 1" width="176" height="176"></a>
 				<a href="https://venith.net/TDKHome/index.html"> <img class="portal-image" src="https://venith.net/Media/tdkhome.png" alt="Portal Image 1" width="176" height="176"></a>
 				<a href="https://venith.net/TDKHome/index.html"> <img class="portal-image" src="https://venith.net/Media/tdkhome.png" alt="Portal Image 1" width="176" height="176"></a>
@@ -52,3 +68,27 @@
         </div>
     </body>
 </html>
+    <!-- Hidden popup div -->
+    <div class="popup" id="popupBox">
+        This is a centered popup box!
+        <br>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <!-- JavaScript code for the popup -->
+    <script>
+        // Function to display the popup
+        function displayPopup() {
+            var popup = document.getElementById("popupBox");
+            popup.style.display = "block";
+        }
+
+        // Function to close the popup
+        function closePopup() {
+            var popup = document.getElementById("popupBox");
+            popup.style.display = "none";
+        }
+
+        // Add a click event listener to the button
+        document.getElementById("popupButton").addEventListener("click", displayPopup);
+    </script>

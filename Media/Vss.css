@@ -15,5 +15,5 @@ a:hover {background-color:black!important;color:rgb(19, 235, 170)!important;}
 [id]:target {display:block}
 
 IMG {max-width:100%;height:auto}
-IMG[src="/Media/Vlogo.png"] {max-width:32px!important;height:32px!important;float:left}
+IMG[src="/Media/Vlogo.png"] {float:left}
 audio {width:99%}

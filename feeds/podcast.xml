@@ -1,0 +1,16 @@
+<rss version="2.0">
+<channel>
+<atom:link href="/feeds/podcast.xml" rel="self" type="application/rss+xml"/>
+    <title>Venith's Podcast RSS Feed</title>
+    <link>https://venith.net/podcast.html</link>
+    <language>en-us</language>
+    <description>The official Venith.NET blog RSS feed.</description>
+        <item>
+        <title>RSS Feed</title>
+        <pubDate>September 17th, 2023 at 10:46PM</pubDate>
+        <link>https://venith.net/podcast.html</link>
+        <guid>9172023_Podcast1-TestingItem</guid>
+        <description>This is a test for the podcast feed, I will leave this public</description>
+        </item>
+</channel>
+</rss>

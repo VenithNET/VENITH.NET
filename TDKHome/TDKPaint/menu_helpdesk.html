@@ -161,6 +161,8 @@
 			</div>
 		</div>
 	</div>
+		<div class="menu">
+		<div class="zebra">
 		<h2>General</h2>
 			<div style="margin:10px; text-align:left">
 				You can write blogs on just about every topic. However, any blogs incorporating overt examples of these (and potentially other) aspects will be deleted by admins and may be followed with a ban:
@@ -187,7 +189,59 @@
 				</ul>
 			</div>
 			<div style="clear:both"></div>
+	<div class="menu">
+		<div class="zebra">
+			<h1>General</h1>
+	<div style="background:#fff">
+		Membership to this collection of websites includes DSiPaint, WiiOperaSDK, TWiiter, and HullBreach Online.
+		These websites may go by alternate names, like DSOperaSDK, DSiUniverse, or 3DSPaint.
+		Membership is free and voluntary for those who would like to experience the added benefits over anonymous visitation.
+		These terms may change without warning as needed and will always be made available in current form.
+	</div>
 
+	<h1>Permission</h1>
+	<div style="background:#fff">
+		Those who are minors acknowledge that their parents and/or legal guardians do not object to membership and participation of these websites.
+	</div>
+
+	<h1>Conduct</h1>
+	<div style="background:#fff">
+		Since members to this collection of websites come in all ages, ethnicities, nationalities, religions, and other diversities, it is inevitable that varying beliefs will be taking part.
+		All participants are expected to conduct themselves in a mature and respectful manner.
+		Hate speech, harassment, and spam, are not tolerated.
+		Exposure of other members to materials including (but not limited to) those deemed pornographic, racist, or defamatory, are not tolerated.
+	</div>
+
+	<h1>Administration</h1>
+	<div style="background:#fff">
+		Periodically, members will be chosen to administer and moderate various aspects of the websites to assist in keeping order.
+		Such promotions are made when needed and are chosen on merit without need to inquire.
+		These members are expected to act as role models to the others since they are seen as authority figures.
+	</div>
+
+	<h1>Punishments</h1>
+	<div style="background:#fff">
+		Administrators and moderates may optionally issue a warning to another members for violation of any rules of conduct.
+		In a chatroom environment, a kick to the main menu from the chatroom is another option.
+		Members who violate rules of conduct may be banned for 24 hours.
+		This prevents participation in chatrooms, bulletin boards, and on TWiiter.
+		The final punishment is a permanent ban of an account, also called a perma-ban.
+		This involves the complete disabling of an account and hiding of any content related to it.
+		Periodic checks are done to prevent repeat offenders from creating new accounts if it is believed that such accounts are created to harass other members.
+	</div>
+
+	<h1>Account Hacking</h1>
+	<div style="background:#fff">
+		Since it generally takes two members to involve account hacking, whether a provided password or a weak password, punishment will apply to both parties involved.
+		Remember to keep all account info confidential and use a strong password to keep the account secure.
+	</div>
+
+	<h1>Privacy Policy</h1>
+	<div style="background:#fff">
+		Some aspects of these websites are stored or logged indefinitely in databases or flat files to either enhance future experiences or to allow public displays of content.
+		Members are responsible for their own public and private content.
+		All member information is kept confidential from third parties unless publicly provided by the members themselves.
+	</div>
 
 	<h1>Opened Questions (4)</h1>
 	<div class="menu">
@@ -228,44 +282,6 @@
 	<div style="margin:5px; text-align:center">
 		<a href="../index.html"><img class="icon" src="images/icons/icon_home.png" alt="Home" /></a>
 	</div>
-
-
-<div id="divAlertPopup" class="alerts_popup menu"></div>
-<script type="text/javascript">
-	var AlertPopupObj = new XMLHttpRequest();
-	function refreshMyPopupAlerts(){
-		AlertPopupObj.open('GET.html', '../includes/ajax.section.my_alert_popup.php', true);
-		AlertPopupObj.send(null);
-		AlertPopupObj.onreadystatechange = function(){
-			if(AlertPopupObj.readyState>2 && AlertPopupObj.status>=400){
-				AlertPopupObj.onreadystatechange = function(){ setTimeout(refreshMyPopupAlerts, 60000); }
-				AlertPopupObj.abort();
-				return;
-			}
-			if(AlertPopupObj.readyState==4){
-				if(AlertPopupObj.responseText){
-					var divAlertPopup = document.getElementById('divAlertPopup'),
-						alerts = [];
-					try{ alerts = eval(AlertPopupObj.responseText); }catch(err){ }
-					if(alerts.length){
-						var alertString = '',
-							index = 0;
-						while(index<alerts.length){
-							alertString += 'New <a href="../mymessageviewer.php?message='+alerts[index].mess+'">Message</a> from <a href="/member?id='+alerts[index].id+'">'+alerts[index].name+'</a>';
-							index++;
-						}
-						divAlertPopup.innerHTML = alertString;
-						divAlertPopup.style.display = 'block';
-					}else{
-						divAlertPopup.style.display = 'none';
-					}
-				}
-				setTimeout(refreshMyPopupAlerts, 10000);
-			}
-		}
-	}
-	refreshMyPopupAlerts();
-</script>
 
 </body>
 </html>

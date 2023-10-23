@@ -1,0 +1,5 @@
+body {background-image: linear-gradient(green, black);text-align: center}
+.header {text-align: center}
+h1 {color:green;background-color:#1c1c1c;text-align:center;border:2px solid white;border-radius:25px;font-family:sans-serif}
+p {color:white;background-color:#1c1c1c;text-align:center;border:1px solid white;border-radius:12px;font-family:sans-serif;}
+a {color:cyan;font-family:sans-serif}

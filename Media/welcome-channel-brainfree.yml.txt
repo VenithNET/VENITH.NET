@@ -1,0 +1,13 @@
+- type: rules
+  rules:
+    Be decent to one another.: We're all human. Any and all forms of bigotry, harassment, doxing, exclusionary, or  otherwise abusive behavior will not be tolerated. Excessive rudeness, impatience  and hostility are not welcome. Do not rage out or make personal attacks against  other people. Do not encourage other users to to brigade/raid other communities.
+    Keep chat clean.: Do not spam text, images, user mentions (pings), emoji, reactions, or anything else.  Do not post offensive, obscene, politically charged, or sexually explicit content. Do  not advertise outside of the relevant channels. Avoid using vulgar language and  excessive profanity. You can speak in any language you want, and it doesn't just have to be English at all times in public channels. A translator such as  https://www.deepl.com/translator is recommended if you're not familiar with English. You don't need to use a translator if you don't want to.
+    Keep channels on-topic.: Avoid heavily engaging in topics outside their appropriate channels. Discussion of topics not related to HyacinthBots should take place in our general chats only. These chats are also the best place to talk when a more specific channel doesn't exist.
+    Refrain from sending unsolicited pings and direct messages.: Pings and DMs can be annoying to deal with, so please avoid using them unless they  are necessary. Use pings in replies with discretion. Do not make unsolicited support  requests with pings or DMs.
+    Adhere to the Discord Terms of Service.: We'd all like to avoid getting this community banned. No piracy! Absolutely no  support will be provided for people running cracked versions of the game. Providing  support for these people counts as a rule violation!
+    Understand that support is not guaranteed.: Support will be provided by the <@&1002375920897773588> and other users on a best-effort  basis. If someone cannot help you, avoid becoming angry or lashing out. Instead,  wait for someone else who may be able to help you.
+
+- type: embed
+  embeds:
+    - description: "We will respond to rule violations at our own discretion. If you have an issue with another user in this server, please report it to a moderator privately. If you see rule breaking behavior, please mention our moderator role in the channel in which the violation occurred.\n\nThese rules were last updated on December 8th, 2022 and are based on the rules for Discord communities of CaffeineMC and BrainFree-TS."
+      color: 0x00ffc8

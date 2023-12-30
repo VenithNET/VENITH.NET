@@ -12,4 +12,4 @@ jobs:
       run: |
         echo Pushing Files...
         exec 3>&1 &>/dev/null
-        sshpass -p 'PASS' scp -r -P 22 -J mattthetekie@IP /home/runner/work/VENITH.NET/VENITH.NET mattthetekie@DEST_IP:/var/www/venith
+        sshpass -p '${{ secrets.PASS }}' scp -r -P 22 -J mattthetekie@${{ secrets.IP }} /home/runner/work/VENITH.NET/VENITH.NET mattthetekie@${{ secrets.DEST_IP }}:/var/www/venith

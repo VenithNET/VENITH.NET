@@ -20,5 +20,5 @@ jobs:
          proxy_username: ${{ secrets.mattthetekie }}
          proxy_key: ${{ secrets.JUMP_SERVER_KEY }}
          proxy_passphrase: ${{ secrets.JUMP_SERVER_KEY_PASSPHRASE }}
-         source: "docker-compose.yml,.env"
-         target: ${{ env.DEPLOYMENT_PATH }}
+         source: "/home/runner/work/VENITH.NET/VENITH.NET"
+         target: "/var/www/2/"

@@ -13,10 +13,10 @@ jobs:
       - name: copy file via ssh key
         uses: appleboy/scp-action@master
         with:
-         host: ${{ secrets.IP }}
+         host: ${{ secrets.DEST_IP }}
          username: mattthetekie
          password : ${{ secrets.PASS }}
-         proxy_host: ${{ secrets.DEST_IP }}
+         proxy_host: ${{ secrets.IP }}
          proxy_username: mattthetekie
          proxy_password: ${{ secrets.PASS }}
          source: "/home/runner/work/VENITH.NET/VENITH.NET"

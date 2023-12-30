@@ -27,3 +27,13 @@ jobs:
           proxy_host: ${{ secrets.IP }}
           proxy_username: mattthetekie
           proxy_password: ${{ secrets.PASS }}
+      - name: remote ssh command
+        uses: appleboy/ssh-action@v1.0.1
+        with:
+          host: ${{ secrets.DEST_IP }}
+          username: mattthetekie
+          password : ${{ secrets.PASS }}
+          proxy_host: ${{ secrets.IP }}
+          proxy_username: mattthetekie
+          proxy_password: ${{ secrets.PASS }}
+          script: whoami

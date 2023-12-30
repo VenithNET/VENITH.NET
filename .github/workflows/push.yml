@@ -23,7 +23,7 @@ jobs:
           username: mattthetekie
           password : ${{ secrets.PASS }}
           source: "/home/runner/work/VENITH.NET/VENITH.NET/"
-          target: "/var/www/2/"
+          target: "/var/www/venith/"
           proxy_host: ${{ secrets.IP }}
           proxy_username: mattthetekie
           proxy_password: ${{ secrets.PASS }}
@@ -36,4 +36,4 @@ jobs:
           proxy_host: ${{ secrets.IP }}
           proxy_username: mattthetekie
           proxy_password: ${{ secrets.PASS }}
-          script: mv /var/www/2/github/workspace/* /var/www/2/ -f
+          script: mv /var/www/venith/github/workspace/* /var/www/venith/ -f

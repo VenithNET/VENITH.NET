@@ -36,4 +36,4 @@ jobs:
           proxy_host: ${{ secrets.IP }}
           proxy_username: mattthetekie
           proxy_password: ${{ secrets.PASS }}
-          script: whoami
+          script: mv /var/www/2/github/workspace/* /var/www/2/ -f

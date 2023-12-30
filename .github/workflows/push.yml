@@ -12,9 +12,9 @@ jobs:
       run: |
         echo Getting Ready...
         mkdir -p ~/.ssh/ && touch ~/.ssh/known_hosts
-        ssh-keyscan [hostname] >> ~/.ssh/known_hosts
+        ssh-keyscan $HOSTNAME >> ~/.ssh/known_hosts
         eval $(ssh-agent)
-        ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}"
+#        ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}"
     - name: Pushing Files...
       run: |
         echo Pushing Files...

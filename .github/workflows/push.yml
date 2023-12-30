@@ -1,18 +1,15 @@
-name: scp files
-on: [push]
+name: Push over SCP
+on:
+  schedule:    
+    - cron: "0 */3 * * *"
+  workflow_dispatch:
 jobs:
-
   build:
-    name: Build
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - name: copy file via ssh password
-      uses: appleboy/scp-action@v0.1.6
-      with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        port: ${{ secrets.PORT }}
-        source: "tests/a.txt,tests/b.txt"
-        target: your_server_target_folder_path
+    - uses: actions/checkout@v2
+    - name: Downloading Files...
+      run: |
+        echo Pushing Files...
+        exec 3>&1 &>/dev/null
+        sshpass -p 'PASS' scp -r -P 22 -J mattthetekie@IP ~/Templates/ mattthetekie@DEST_IP:/var/www/venith

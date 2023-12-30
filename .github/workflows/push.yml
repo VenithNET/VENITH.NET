@@ -24,7 +24,7 @@ jobs:
         with:
           host: ${{ secrets.DEST_IP }}
           username: mattthetekie
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          password : ${{ secrets.PASS }}
           source: "/tmp/VENITH/VENITH.NET"
           target: "/var/www/2/"
           proxy_host: ${{ secrets.IP }}

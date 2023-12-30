@@ -1,4 +1,4 @@
-name: Push over SCP
+name: Push files over SCP
 
 on:
   schedule:
@@ -6,18 +6,27 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  download_and_push:
     runs-on: ubuntu-latest
 
     steps:
-      - name: copy file via ssh key
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Downloading Files
+        run: |
+          echo Downloading Files...
+          mkdir /tmp/VENITH
+          cd /tmp/VENITH
+          git clone https://github.com/VenithNET/VENITH.NET
+      - name: Push Files via SCP
         uses: appleboy/scp-action@master
         with:
-         host: ${{ secrets.DEST_IP }}
-         username: mattthetekie
-         password : ${{ secrets.PASS }}
-         proxy_host: ${{ secrets.IP }}
-         proxy_username: mattthetekie
-         proxy_password: ${{ secrets.PASS }}
-         source: "$GITHUB_WORKSPACE"
-         target: "/var/www/2/"
+          host: ${{ secrets.DEST_IP }}
+          username: mattthetekie
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "/tmp/VENITH/VENITH.NET"
+          target: "/var/www/2/"
+          proxy_host: ${{ secrets.IP }}
+          proxy_username: mattthetekie
+          proxy_password: ${{ secrets.PASS }}

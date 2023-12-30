@@ -23,4 +23,4 @@ jobs:
       - name: Pushing Files...
         run: |
           echo "Pushing Files..."
-          sshpass -p '${{ secrets.PASS }}' scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -r -P 22 -J mattthetekie@${{ secrets.IP }}:/home/runner/work/VENITH.NET/VENITH.NET mattthetekie@${{ secrets.DEST_IP }}:/var/www/venith
+          sshpass -p '${{ secrets.PASS }}' scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -r -P 22 /home/runner/work/VENITH.NET/VENITH.NET mattthetekie@${{ secrets.DEST_IP }}:/var/www/venith

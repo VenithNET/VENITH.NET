@@ -19,5 +19,5 @@ jobs:
          proxy_host: ${{ secrets.IP }}
          proxy_username: mattthetekie
          proxy_password: ${{ secrets.PASS }}
-         source: "/home/runner/work/VENITH.NET/VENITH.NET"
+         source: "/home/runner/work/VENITHNET/VENITH.NET"
          target: "/var/www/2/"

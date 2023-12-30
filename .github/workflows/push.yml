@@ -1,31 +1,24 @@
-name: Push over SCP
+  - name: copy file via ssh key
+    uses: appleboy/scp-action@master
+    with:
+      host: ${{ secrets.TEST_SERVER_HOST }}
+      username: ${{ secrets.TEST_SERVER_USERNAME }}
+      password : ${{ secrets.TEST_SERVER_PASSWORD }}
+      proxy_host: ${{ secrets.JUMP_SERVER_HOST }}
+      proxy_username: ${{ secrets.JUMP_SERVER_USERNAME }}
+      proxy_key: ${{ secrets.JUMP_SERVER_KEY }}
+      proxy_passphrase: ${{ secrets.JUMP_SERVER_KEY_PASSPHRASE }}
+      source: "docker-compose.yml,.env"
+      target: ${{ env.DEPLOYMENT_PATH }}
 
-on:
-  schedule:
-    - cron: "0 */3 * * *"
-  workflow_dispatch:
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Write SSH keys
-        run: |
-          install -m 600 -D /dev/null ~/.ssh/id_rsa
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          host='${{ secrets.IP }}'
-          host1='${{ secrets.DEST_IP }}'
-          hosts="$(dig +short "$host" | grep -v '\.$' | sed -z 's|\n|,|g')$host"
-          hosts1="$(dig +short "$host1" | grep -v '\.$' | sed -z 's|\n|,|g')$host"
-          ssh-keyscan -H "$hosts" > ~/.ssh/known_hosts
-          ssh-keyscan -H "$hosts1" > ~/.ssh/known_hosts
-          echo "${{ secrets.DEST_KEY }}" > ~/.ssh/known_hosts
-          echo "${{ secrets.DEST_KEY }}" > ~/.ssh/known_hosts2
-      - name: Pushing Files...
-        run: |
-          echo "Pushing Files..."
-          ${{ secrets.TEST }}
+  - name: Executing remote ssh commands using ssh key
+    uses: appleboy/ssh-action@master
+    with:
+      host: ${{ secrets.TEST_SERVER_HOST }}
+      username: ${{ secrets.TEST_SERVER_USERNAME }}
+      password : ${{ secrets.TEST_SERVER_PASSWORD }}
+      proxy_host: ${{ secrets.JUMP_SERVER_HOST }}
+      proxy_username: ${{ secrets.JUMP_SERVER_USERNAME }}
+      proxy_key: ${{ secrets.JUMP_SERVER_KEY }}
+      proxy_passphrase: ${{ secrets.JUMP_SERVER_KEY_PASSPHRASE }}
+      script: pwd

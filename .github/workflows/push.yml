@@ -11,4 +11,8 @@ jobs:
     - name: Pushing Files...
       run: |
         echo Pushing Files...
+        mkdir -p ~/.ssh/ && touch ~/.ssh/known_hosts
+        ssh-keyscan [hostname] >> ~/.ssh/known_hosts
+        eval $(ssh-agent)
+        ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}"
         sshpass -p '${{ secrets.PASS }}' scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -r -P 22 -J mattthetekie@${{ secrets.IP }} /home/runner/work/VENITH.NET/VENITH.NET mattthetekie@${{ secrets.DEST_IP }}:/var/www/venith

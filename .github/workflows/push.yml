@@ -1,4 +1,4 @@
-name: IPTV
+name: Push over SCP
 on:
   schedule:    
     - cron: "0 */3 * * *"

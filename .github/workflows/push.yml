@@ -14,11 +14,10 @@ jobs:
         uses: appleboy/scp-action@master
         with:
          host: ${{ secrets.IP }}
-         username: ${{ secrets.mattthetekie }}
+         username: mattthetekie
          password : ${{ secrets.PASS }}
          proxy_host: ${{ secrets.DEST_IP }}
-         proxy_username: ${{ secrets.mattthetekie }}
-         proxy_key: ${{ secrets.JUMP_SERVER_KEY }}
-         proxy_passphrase: ${{ secrets.JUMP_SERVER_KEY_PASSPHRASE }}
+         proxy_username: mattthetekie
+         proxy_password: ${{ secrets.PASS }}
          source: "/home/runner/work/VENITH.NET/VENITH.NET"
          target: "/var/www/2/"

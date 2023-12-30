@@ -16,17 +16,13 @@ jobs:
       - name: Downloading Files
         run: |
           echo Downloading Files...
-          mkdir /home/runner/VENITH1
-          cd /home/runner/VENITH1
-          git clone "https://github.com/VenithNET/VENITH.NET"
-          echo $PWD
       - name: Push Files via SCP
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.DEST_IP }}
           username: mattthetekie
           password : ${{ secrets.PASS }}
-          source: "/home/runner/VENITH1/VENITH.NET"
+          source: "/home/runner/work/VENITH.NET/VENITH.NET/"
           target: "/var/www/2/"
           proxy_host: ${{ secrets.IP }}
           proxy_username: mattthetekie

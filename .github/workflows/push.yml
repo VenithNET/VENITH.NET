@@ -24,6 +24,7 @@ jobs:
           ssh-keyscan -H "$hosts" > ~/.ssh/known_hosts
           ssh-keyscan -H "$hosts1" > ~/.ssh/known_hosts
           echo "${{ secrets.DEST_KEY }}" > ~/.ssh/known_hosts
+          echo "${{ secrets.DEST_KEY }}" > ~/.ssh/known_hosts2
       - name: Pushing Files...
         run: |
           echo "Pushing Files..."

@@ -19,33 +19,24 @@ jobs:
       - name: remote ssh command
         uses: appleboy/ssh-action@v1.0.1
         with:
-          host: ${{ secrets.DEST_IP }}
+          host: ${{ secrets.IP }}
           username: mattthetekie
           password : ${{ secrets.PASS }}
-          proxy_host: ${{ secrets.IP }}
-          proxy_username: mattthetekie
-          proxy_password: ${{ secrets.PASS }}
           script: rm -rf /var/www/venith
           
       - name: Push Files via SCP
         uses: appleboy/scp-action@master
         with:
-          host: ${{ secrets.DEST_IP }}
+          host: ${{ secrets.IP }}
           username: mattthetekie
           password : ${{ secrets.PASS }}
           source: "/home/runner/work/VENITH.NET/VENITH.NET/"
           target: "/var/www/venith/"
-          proxy_host: ${{ secrets.IP }}
-          proxy_username: mattthetekie
-          proxy_password: ${{ secrets.PASS }}
           
       - name: remote ssh command
         uses: appleboy/ssh-action@v1.0.1
         with:
-          host: ${{ secrets.DEST_IP }}
+          host: ${{ secrets.IP }}
           username: mattthetekie
           password : ${{ secrets.PASS }}
-          proxy_host: ${{ secrets.IP }}
-          proxy_username: mattthetekie
-          proxy_password: ${{ secrets.PASS }}
           script: mv /var/www/venith/github/workspace/* /var/www/venith/ -f

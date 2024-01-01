@@ -3,7 +3,7 @@ body {background-color:#000;margin:0px;color:white!important;font-size:12px!impo
 *, a, button, body { cursor: url('http://venith.net/Media/cursor.png'), auto!important;	}
 .con {background:#040;max-width:800px;margin:0px auto;}
 .nav {background:#000;text-align:center;overflow:auto;max-height:50px;font-size:26px;color:white!important;font-weight:bold;padding:4px;border:1px #080 solid}
-.txt {background:#050;padding:2px}
+.txt {background:#040;padding:2px}
 .foot {background:#030;font-size:10px!important;padding:2px}
 
 h1 {background:#040;margin:auto 0px;text-align:center;font-weight:bold;}

@@ -23,6 +23,7 @@ jobs:
           username: demon
           password : ${{ secrets.PASS }}
           proxy_host: ${{ secrets.IP }}
+          proxy_port: 2035
           proxy_username: root
           proxy_password: ${{ secrets.PASS }}
           script: rm -rf /var/www/venith
@@ -34,6 +35,7 @@ jobs:
           username: demon
           password : ${{ secrets.PASS }}
           proxy_host: ${{ secrets.IP }}
+          proxy_port: 2035
           proxy_username: root
           proxy_password: ${{ secrets.PASS }}
           source: "/home/runner/work/VENITH.NET/VENITH.NET/"
@@ -46,6 +48,7 @@ jobs:
           username: demon
           password : ${{ secrets.PASS }}
           proxy_host: ${{ secrets.IP }}
+          proxy_port: 2035
           proxy_username: root
           proxy_password: ${{ secrets.PASS }}
           script: mv /var/www/venith/github/workspace/* /var/www/venith/ -f

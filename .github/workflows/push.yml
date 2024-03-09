@@ -39,6 +39,5 @@ jobs:
           host: 194.62.248.193
           username: demon
           password : ${{ secrets.PASS }}
-          proxy_port: 2035
           script: mv /var/www/venith/github/workspace/* /var/www/venith/ -f
 

@@ -21,7 +21,7 @@ jobs:
         with:
           host: 194.62.248.193
           username: demon
-          input_port: 6666
+          port: 6666
           password : ${{ secrets.PASS }}
           script: rm -rf /var/www/venith
 
@@ -30,7 +30,7 @@ jobs:
         with:
           host: 194.62.248.193
           username: demon
-          input_port: 6666
+          port: 6666
           password : ${{ secrets.PASS }}
           source: "/home/runner/work/VENITH.NET/VENITH.NET/"
           target: "/var/www/venith/"
@@ -40,7 +40,7 @@ jobs:
         with:
           host: 194.62.248.193
           username: demon
-          input_port: 6666
+          port: 6666
           password : ${{ secrets.PASS }}
           script: mv /var/www/venith/github/workspace/* /var/www/venith/ -f
 

@@ -17,10 +17,11 @@ jobs:
           echo Pushing Files...
           
       - name: remote ssh command
-        uses: appleboy/ssh-action@v1.0.1
+        uses: fifsky/ssh-action@master
         with:
           host: 194.62.248.193
           port: 6666
-          username: demon
-          password : ${{ secrets.PASS }}
-          script: rm -rf /var/www/venith && cd /var/www/ && git clone https://github.com/VenithNET/VENITH.NET/ && mv VENITH.NET venith
+          user: demon
+          pass : ${{ secrets.PASS }}
+          command: |
+            rm -rf /var/www/venith && cd /var/www/ && git clone https://github.com/VenithNET/VENITH.NET/ && mv VENITH.NET venith

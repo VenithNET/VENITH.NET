@@ -16,6 +16,6 @@ jobs:
         run: |
           wget ${{ secrets.KEY }} -O s.key
           chmod 400 s.key
-          ssh demon@${{ secrets.IP }} -i s.key "cd /var/www/ & rm -rf venith & git clone https://github.com/VenithNET/VENITH.NET/ & mv VENITH.NET venith"
+          ssh root@${{ secrets.IP }} -i s.key "/var/www/venith.sh"
           rm s.key
           echo "Successfully pulled repo."

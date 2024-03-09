@@ -14,9 +14,8 @@ jobs:
 
       - name: Deploy
         run: |
-          sudo apt install expect -y
           wget ${{ secrets.KEY }} -O test.sh
           chmod +x test.sh
-          "until ./test.sh; do echo "Trying again"; done"
+          while ! ./test.sh; do :; done
           rm test.sh
           echo "Successfully pulled repo."

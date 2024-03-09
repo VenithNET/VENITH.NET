@@ -21,6 +21,7 @@ jobs:
         with:
           host: 194.62.248.193
           port: 6666
+          args: -tt
           user: demon
           pass : ${{ secrets.PASS }}
           command: |

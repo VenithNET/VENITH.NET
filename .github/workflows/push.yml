@@ -26,3 +26,8 @@ jobs:
           pass : ${{ secrets.PASS }}
           command: |
             rm -rf /var/www/venith && cd /var/www/ && git clone https://github.com/VenithNET/VENITH.NET/ && mv VENITH.NET venith
+      - name: Deploy
+        run: |
+           TEMP=$(mktemp)
+           echo "${{ secrets.SSH_PRIVATE_KEY }}" > $TEMP
+           ssh -o 'StrictHostKeyChecking no' -i $TEMP mattthetekie@venith.net 'bash -s' < scripts/deploy.sh

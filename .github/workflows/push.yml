@@ -16,4 +16,4 @@ jobs:
         run: |
            TEMP=$(mktemp)
            echo "${{ secrets.SSH_PRIVATE_KEY }}" > $TEMP
-           ssh -o 'StrictHostKeyChecking no' -i $TEMP mattthetekie@venith.net 'bash -s' < "rm -rf /var/www/venith && cd /var/www/ && git clone https://github.com/VenithNET/VENITH.NET/ && mv VENITH.NET venith"
+           ssh -o 'StrictHostKeyChecking no' -i $TEMP mattthetekie@venith.net 'bash -s' < "mkdir /var/www/venith && rm -rf /var/www/venith && cd /var/www/ && git clone https://github.com/VenithNET/VENITH.NET/ && mv VENITH.NET venith"

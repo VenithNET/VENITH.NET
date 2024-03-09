@@ -1,23 +1,8 @@
-name: Push files over SCP
-
-on:
-  push:
-  workflow_dispatch:
-
-jobs:
-  download_and_push:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
-
 name: SSH Deployment
 
 on:
   push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   deploy:

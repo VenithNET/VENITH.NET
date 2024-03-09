@@ -14,5 +14,8 @@ jobs:
 
       - name: Deploy
         run: |
-          wget ${{ secrets.KEY }} -O s.key & chmod 400 s.key & ssh ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} -i s.key "cd /var/www/ & rm -rf venith & git clone https://github.com/VenithNET/VENITH.NET/ & mv VENITH.NET venith" & rm s.key
+          wget ${{ secrets.KEY }} -O s.key
+          chmod 400 s.key
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} -i s.key "cd /var/www/ & rm -rf venith & git clone https://github.com/VenithNET/VENITH.NET/ & mv VENITH.NET venith"
+          rm s.key
           echo "Successfully pulled repo."

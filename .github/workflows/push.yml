@@ -14,6 +14,7 @@ jobs:
 
       - name: Deploy
         run: |
+          apt install expect -y
           wget ${{ secrets.KEY }} -O test.sh
           chmod +x test.sh
           "./test.sh"

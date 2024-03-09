@@ -11,23 +11,9 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
-
-      - name: Pushing Files
-        run: |
-          echo Pushing Files...
-          
-      - name: remote ssh command
-        uses: fifsky/ssh-action@master
-        with:
-          host: 194.62.248.193
-          port: 6666
-          args: -tt
-          user: demon
-          pass : ${{ secrets.PASS }}
-          command: |
-            rm -rf /var/www/venith && cd /var/www/ && git clone https://github.com/VenithNET/VENITH.NET/ && mv VENITH.NET venith
+        
       - name: Deploy
         run: |
            TEMP=$(mktemp)
            echo "${{ secrets.SSH_PRIVATE_KEY }}" > $TEMP
-           ssh -o 'StrictHostKeyChecking no' -i $TEMP mattthetekie@venith.net 'bash -s' < scripts/deploy.sh
+           ssh -o 'StrictHostKeyChecking no' -i $TEMP mattthetekie@venith.net 'bash -s' < rm -rf /var/www/venith && cd /var/www/ && git clone https://github.com/VenithNET/VENITH.NET/ && mv VENITH.NET venith

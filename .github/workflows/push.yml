@@ -23,4 +23,4 @@ jobs:
           username: demon
           port: 6666
           password : ${{ secrets.PASS }}
-          script: rm -rf /var/www/venith && cd /var/www/ && git clone https://github.com/VenithNET/VENITH.NET/ && mv VENITH.NET && venith
+          script: rm -rf /var/www/venith && cd /var/www/ && git clone https://github.com/VenithNET/VENITH.NET/ && mv VENITH.NET venith

@@ -1,6 +1,6 @@
-* {font-family:"sans-serif", "Arial", "monospace"!important;word-wrap:break-word!important;}
+* {font-family:monospace;word-wrap:break-word!important;}
 body {background-color:#000;margin:0px;color:white!important;font-size:12px!important;}
-*, a, button, body { cursor: url('http://venith.net/media/cursor.png'), auto!important;	}
+*, a, button, body {cursor:url('/media/cursor.png'), auto!important;}
 .con {background:#040;margin:0px auto;}
 .nav {background:#050;text-align:center;overflow:auto;max-height:50px;font-size:26px;color:white!important;font-weight:bold;padding:4px;border-bottom:2px #FFF solid}
 .txt {background:#040;padding:2px}
@@ -8,7 +8,7 @@ body {background-color:#000;margin:0px;color:white!important;font-size:12px!impo
 
 h1 {background:#040;margin:auto 0px;text-align:center;font-weight:bold;}
 a {color:#FFF}
-a:hover {background-color:black!important;color:rgb(19, 235, 170)!important;}
+a:hover {color:rgb(235, 170, 19)!important;}
 ::selection {background:lime;color:black}
 
 [id] {display:none}

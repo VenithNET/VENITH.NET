@@ -1,4 +1,4 @@
-* {font-family:monospace;word-wrap:break-word!important;}
+* {font-family:sans-serif;word-wrap:break-word!important;line-height:1.2em}
 body {background-color:#000;margin:0px;color:white!important;font-size:12px!important;}
 *, a, button, body {cursor:url('/media/cursor.png'), auto!important;}
 .con {background:#040;margin:0px auto;}

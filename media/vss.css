@@ -11,9 +11,6 @@ a {color:#FFF}
 a:hover {color:rgb(235, 170, 19)!important;}
 ::selection {background:lime;color:black}
 
-[id] {display:none}
-[id]:target {display:block}
-
 IMG {max-width:100%;height:auto}
 IMG[src="/media/vlogo2.jpg"] {float:left}
 audio {width:99%}

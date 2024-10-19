@@ -318,4 +318,30 @@ nav ul li a:hover {
 </footer>
 
 </body>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Function to check if the user is on a legacy device
+            function isLegacyDevice() {
+                const userAgent = navigator.userAgent;
+
+                // List of legacy devices/browsers
+                const legacyDevices = [
+                    /Nintendo DSi/i,
+                    /Windows XP/i,
+                    /MSIE/i, // Internet Explorer
+                    /Trident/i, // Internet Explorer 11+
+                    /Firefox\/3\.6/i, // Old Firefox version
+                    /Opera\/12/i, // Old Opera version
+                ];
+
+                // Check for any legacy device
+                return legacyDevices.some(device => device.test(userAgent));
+            }
+
+            // Redirect to legacy site if a legacy device is detected
+            if (isLegacyDevice()) {
+                window.location.href = "http://legacy.venith.net";
+            }
+        });
+    </script>
 </html>

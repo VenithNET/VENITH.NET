@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "System Font";
-    src: url("http://venith.net/assets/fonts/SFUIRounded.woff") format('woff');
+    src: url("https://venith.net/assets/fonts/SFUIRounded.woff") format('woff');
 }
 *, a, button, body {cursor:url('https://venith.net/assets/images/cursor.png'), auto!important;}
 :root {

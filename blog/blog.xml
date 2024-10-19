@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
 <channel>
-<atom:link href="https://venith.net/feeds/blog.xml" rel="self" type="application/rss+xml"/>
+<atom:link href="https://www.venith.net/feeds/blog.xml" rel="self" type="application/rss+xml"/>
     <title>Venith's Blog RSS Feed</title>
-    <link>https://venith.net/blog.html</link>
+    <link>https://www.venith.net/blog.html</link>
     <language>en-us</language>
     <description>The official Venith.NET blog RSS feed.</description>
         <item>
         <title>RSS Feed</title>
         <pubDate>September 17th, 2023 at 10:46PM</pubDate>
-        <link>https://venith.net/blog.html</link>
+        <link>https://www.venith.net/blog.html</link>
         <guid>9172023_Blog1-TestingItem</guid>
         <description>This is a test for the RSS feed, I will leave this public UwU</description>
         </item>

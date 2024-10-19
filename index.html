@@ -15,38 +15,6 @@
     <link rel="icon" type="image/png" href="https://www.venith.net/assets/images/banner.png"/>
     <link href="https://www.venith.net/assets/css/moeta.css" rel="stylesheet" type="text/css"/>
     <title>Home - Venith</title>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Function to check if the user is on a legacy device
-            function isLegacyDevice() {
-                const userAgent = navigator.userAgent;
-
-                // Log the user agent for debugging
-                console.log("User Agent:", userAgent);
-
-                // List of legacy devices/browsers
-                const legacyDevices = [
-                    /Nintendo DSi/i,               // Match DSi
-                    /Windows XP/i,                 // Match Windows XP
-                    /MSIE/i,                       // Match Internet Explorer (any version)
-                    /Trident/i,                    // Match Internet Explorer 11+
-                    /Firefox\/3\.6/i,              // Match old Firefox version
-                    /Opera\/12/i,                  // Match old Opera version
-                    /Opera\/9\.5/i,                // Match Opera 9.5 (DSi specific)
-                    /Nintendo Wii/i,               // Match Nintendo Wii
-                    /PlayStation Portable/i         // Match PSP
-                ];
-
-                // Check for any legacy device
-                return legacyDevices.some(device => device.test(userAgent));
-            }
-
-            // Redirect to legacy site if a legacy device is detected
-            if (isLegacyDevice()) {
-                window.location.href = "http://legacy.venith.net";
-            }
-        });
-    </script>
 </head>
 <style>
 @charset "UTF-8";

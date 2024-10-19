@@ -21,6 +21,9 @@
             function isLegacyDevice() {
                 const userAgent = navigator.userAgent;
 
+                // Log the user agent for debugging
+                console.log("User Agent:", userAgent);
+
                 // List of legacy devices/browsers
                 const legacyDevices = [
                     /Nintendo DSi/i,               // Match DSi

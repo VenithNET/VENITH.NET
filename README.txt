@@ -1,3 +1,3 @@
 # ACCESS TO VENITH NETWORK GRANTED
 WELCOME TO THE NETWORK!
-https://www.venith.net
+http://www.venith.net

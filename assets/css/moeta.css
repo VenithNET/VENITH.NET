@@ -1,0 +1,691 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "SFUIRounded";
+    src: url("http://www.venith.net/assets/fonts/SFUIRounded.ttf") format('truetype');
+}
+*, a, button, body {cursor:url('http://www.venith.net/assets/images/cursor.png'), auto!important;}
+:root {
+    --genwidth: 850px;
+    --navwidth: 175px;
+    --fg: #ddd;
+    --altfg: #ccc;
+    --fgemph: white;
+    --bg: #111;
+    --altbg: #333;
+    --emph: #333;
+    --bordercolor: #555;
+    --limish: #0e0;
+}
+
+body {
+    font-family: "SFUIRounded";
+    background: linear-gradient(indigo, darkslategray) fixed;
+    background: #100;
+    margin-bottom: 100px;
+    font-weight: 300;
+    color: #fff;
+    padding: 1.5em;
+    max-width: 100%;
+    background: url(http://www.venith.net/assets/images/bg.gif) center center/cover fixed no-repeat;
+}
+
+html, body {
+    height: 100%;
+}
+
+a {
+    color: #EE4B2B;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #fff;
+}
+
+h1, h2, h3 {
+    font-weight: lighter;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+header .moeta-name {
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    width: 100%;
+    max-width: 850px;
+}
+
+.moeta-name h1 {
+    margin-bottom: 0;
+}
+
+.moeta-name p {
+    opacity: 0.6;
+    font-size: 0.875em;
+}
+
+main {
+    padding: 1.5em;
+    margin-bottom: 2em;
+    background: rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+main h2 {
+    position: relative;
+    margin-top: 3em;
+}
+
+main h2:before {
+    content: '';
+    height: 100%;
+    width: 0.5rem;
+    left: -1.5rem;
+    background: #EE4B2B;
+    position: absolute;
+}
+
+main h2:first-child {
+    margin-top: 0;
+}
+
+footer {
+    padding: 1em;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Modernized Navigation Styling */
+nav {
+    background-color: #222;
+    border-bottom: 1px solid #444;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Ensures horizontal alignment */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    padding: 14px 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #EE4B2B;
+    color: #fff;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0;
+        max-width: 100%;
+        float: none;
+        margin-bottom: 0;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    header .moeta-name {
+        padding: 1.5em;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    main {
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+
+    nav ul {
+        flex-wrap: wrap; /* Allows wrapping for smaller devices */
+    }
+
+    nav li {
+        margin: 10px 5px; /* Reduced margin to fit on smaller screens */
+    }
+
+    nav a {
+        padding: 10px 12px;
+        text-align: center;
+    }
+}
+
+/* For larger screens like desktops */
+@media screen and (min-width: 1024px) {
+    body {
+        max-width: 70%;
+        margin: 0 auto;
+        padding: 2em;
+    }
+
+    header {
+        margin-bottom: 2em;
+    }
+
+    main {
+        padding: 2em;
+        margin-bottom: 3em;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+}
+
+@charset "UTF-8";
+
+:root {
+    --genwidth: 850px;
+    --navwidth: 175px;
+    --fg: #ddd;
+    --altfg: #ccc;
+    --fgemph: white;
+    --bg: #111;
+    --altbg: #333;
+    --emph: #333;
+    --bordercolor: #555;
+    --limish: #0e0;
+}
+
+body {
+    font-family: "SFUIRounded";
+    background: linear-gradient(indigo, darkslategray) fixed;
+    background: #100;
+    margin-bottom: 100px;
+    font-weight: 300;
+    color: #fff;
+    padding: 1.5em;
+    max-width: 100%; /* Adjusted for responsive scaling */
+    background: url(http://www.venith.net/assets/images/bg.gif) center center/cover fixed no-repeat;
+}
+
+html, body {
+    height: 100%;
+}
+
+a {
+    color: #EE4B2B;
+}
+
+h1, h2, h3 {
+    font-weight: lighter;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+header .moeta-name {
+    padding: 1rem;
+    text-align: center;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 850px; /* Keeps it manageable on larger screens */
+}
+
+.moeta-name h1 {
+    margin-bottom: 0;
+}
+
+.moeta-name p {
+    opacity: 0.6;
+    font-size: 0.875em;
+}
+
+main {
+    padding: 1.5em;
+    margin-bottom: 2em;
+    background: rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+main h2 {
+    position: relative;
+    margin-top: 3em;
+}
+
+main h2:before {
+    content: '';
+    height: 100%;
+    width: 0.5rem;
+    left: -1.5rem;
+    background: #EE4B2B;
+    position: absolute;
+}
+
+main h2:first-child {
+    margin-top: 0;
+}
+
+footer {
+    padding: 1em;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #222;
+    overflow: hidden;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Rainbow Bar */
+.rainbow-bar {
+    display: block;
+    width: 100%;
+    height: 20px; /* Default height */
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0;
+        max-width: 100%;
+        float: none;
+        margin-bottom: 0;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    header .moeta-name {
+        padding: 1.5em;
+        text-align: center;
+        max-width: 100%; /* Ensures full width scaling on mobile */
+    }
+
+    main {
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+
+    nav ul {
+        flex-direction: row; /* Keep navbar horizontal */
+        justify-content: space-evenly;
+    }
+
+    .rainbow-bar {
+        height: 10px; /* Adjust height for smaller screens */
+    }
+
+    nav a {
+        padding: 12px 16px;
+    }
+}
+
+/* For larger screens like desktops */
+@media screen and (min-width: 1024px) {
+    body {
+        max-width: 70%;
+        margin: 0 auto;
+        padding: 2em;
+    }
+
+    header {
+        margin-bottom: 2em;
+    }
+
+    main {
+        padding: 2em;
+        margin-bottom: 3em;
+    }
+}
+
+
+/* Container for the main content and the grid layout */
+main {
+    padding: 20px;
+    margin-top: 100px; /* Enough margin-top to avoid overlap */
+}
+
+/* Grid layout for three sections */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Transparent background for each column */
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+/* Hover effect for links */
+nav ul li a:hover {
+    background-color: #EE4B2B; /* Background changes to orange on hover */
+    color: white; /* Text stays white */
+}
+
+
+@charset "UTF-8";
+
+:root {
+    --genwidth: 850px;
+    --navwidth: 175px;
+    --fg: #ddd;
+    --altfg: #ccc;
+    --fgemph: white;
+    --bg: #111;
+    --altbg: #333;
+    --emph: #333;
+    --bordercolor: #555;
+    --limish: #0e0;
+}
+
+body {
+    font-family: "SFUIRounded";
+    background: linear-gradient(indigo, darkslategray) fixed;
+    background: #100;
+    margin-bottom: 100px;
+    font-weight: 300;
+    color: #fff;
+    padding: 1.5em;
+    max-width: 100%; /* Adjusted for responsive scaling */
+    background: url(http://www.venith.net/assets/images/bg.gif) center center/cover fixed no-repeat;
+}
+
+html, body {
+    height: 100%;
+}
+
+a {
+    color: #EE4B2B;
+}
+
+h1, h2, h3 {
+    font-weight: lighter;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+header .moeta-name {
+    padding: 1rem;
+    text-align: center;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 850px; /* Keeps it manageable on larger screens */
+}
+
+.moeta-name h1 {
+    margin-bottom: 0;
+}
+
+.moeta-name p {
+    opacity: 0.6;
+    font-size: 0.875em;
+}
+
+main {
+    padding: 1.5em;
+    margin-bottom: 2em;
+    background: rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+main h2 {
+    position: relative;
+    margin-top: 3em;
+}
+
+main h2:before {
+    content: '';
+    height: 100%;
+    width: 0.5rem;
+    left: -1.5rem;
+    background: #EE4B2B;
+    position: absolute;
+}
+
+main h2:first-child {
+    margin-top: 0;
+}
+
+footer {
+    padding: 1em;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #222;
+    overflow: hidden;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Rainbow Bar */
+.rainbow-bar {
+    display: block;
+    width: 100%;
+    height: 20px; /* Default height */
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0;
+        max-width: 100%;
+        float: none;
+        margin-bottom: 0;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    header .moeta-name {
+        padding: 1.5em;
+        text-align: center;
+        max-width: 100%; /* Ensures full width scaling on mobile */
+    }
+
+    main {
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+
+    nav ul {
+        flex-direction: row; /* Keep navbar horizontal */
+        justify-content: space-evenly;
+    }
+
+    .rainbow-bar {
+        height: 10px; /* Adjust height for smaller screens */
+    }
+
+    nav a {
+        padding: 12px 16px;
+    }
+}
+
+/* For larger screens like desktops */
+@media screen and (min-width: 1024px) {
+    body {
+        max-width: 70%;
+        margin: 0 auto;
+        padding: 2em;
+    }
+
+    header {
+        margin-bottom: 2em;
+    }
+
+    main {
+        padding: 2em;
+        margin-bottom: 3em;
+    }
+}
+
+
+/* Container for the main content and the grid layout */
+main {
+    padding: 20px;
+    margin-top: 100px; /* Enough margin-top to avoid overlap */
+}
+
+/* Grid items with transparent background */
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive adjustments for smaller screens (mobile devices) */
+@media screen and (max-width: 768px) {
+    /* Ensure grid item transparency is applied on mobile */
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.2); /* Ensure transparency on mobile */
+    }
+
+    /* Other mobile styles */
+    .rainbow-bar {
+        height: 10px; /* Adjust height for smaller screens */
+    }
+
+    nav a {
+        padding: 12px 16px;
+    }
+
+    /* Other mobile-specific styles if needed */
+}
+
+/* Hover effect for links */
+nav ul li a:hover {
+    background-color: #EE4B2B; /* Background changes to orange on hover */
+    color: white; /* Text stays white */
+}
+
+
+    .scrolling-wrapper {
+      display: flex;
+      width: 100%;
+      overflow: hidden; /* Ensures the text scrolls inside the container */
+    }
+
+    .rainbow-text {
+      font-size: 50px;
+      font-weight: bold;
+      text-transform: uppercase;
+      white-space: nowrap;
+      animation: scroll-text 10s linear infinite;
+      background-image: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+      background-size: 300% 100%;
+      background-position: 0 0;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    @keyframes scroll-text {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }

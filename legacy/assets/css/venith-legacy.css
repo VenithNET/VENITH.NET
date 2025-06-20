@@ -44,3 +44,31 @@ IMG {max-width:99%;height:auto;}
     }
 }
 
+/* Container for the main content and the grid layout */
+main {
+    padding: 20px;
+    margin-top: 100px; /* Enough margin-top to avoid overlap */
+}
+
+/* Grid layout for three sections */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Transparent background for each column */
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+/* Hover effect for links */
+nav ul li a:hover {
+    background-color: #EE4B2B; /* Background changes to orange on hover */
+    color: white; /* Text stays white */
+}

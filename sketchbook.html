@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Daniele's Website - Sketchbook</title>
+    <meta
+      name="description"
+      content="Paint in the browser and submit your own artwork to appear in the gallery."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/sketchbook.css" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Daniele" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <!-- Canonical tag -->
+    <link rel="canonical" href="sketchbook.html" />
+  </head>
+
+  <body id="body">
+    <!---Site Container--->
+    <div id="websiteContainer">
+      <!-- Spacer -->
+      <div id="websiteSpacerTop"></div>
+      <!-- Header -->
+      <header id="header">
+        <img
+          src="images/header-logo.png"
+          alt="Logo and Title"
+          class="header-logo"
+        />
+      </header>
+
+      <!-- Left Aside -->
+      <aside id="leftSiteContent">
+        <!-- Main Navigation -->
+        <nav id="leftNav" aria-label="Main Navigation">
+          <div class="nav-categories">
+            <span>This Website</span>
+            <div class="nav-items">
+              <img
+                src="images/home.png"
+                class="nav-icons"
+                alt="Kirby's house"
+              /><a href="index.html" class="nav-links" id="navHome">Home</a>
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/site-info.png"
+                class="nav-icons"
+                alt="Blue Kirby"
+              /><a href="site_info.html" class="nav-links" id="navSiteInfo"
+                >Site Info</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/past-versions.png"
+                class="nav-icons"
+                alt="Star"
+              /><a
+                href="past_versions.html"
+                class="nav-links"
+                id="navPastVersions"
+                >Past Versions</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-categories">
+            <span>Personal</span>
+            <div class="nav-items">
+              <img src="images/about-me.png" class="nav-icons" alt="Kirby" /><a
+                href="about_me.html"
+                class="nav-links"
+                id="navAboutMe"
+                >About Me</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/favorite-games.png"
+                class="nav-icons"
+                alt="N64 Logo"
+              /><a
+                href="favorite_games.html"
+                class="nav-links"
+                id="navFavoriteGames"
+                >Favorite Games</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/anime-reviews.png"
+                class="nav-icons"
+                alt="Konata Izumi"
+              /><a
+                href="anime_reviews.html"
+                class="nav-links"
+                id="navAnimeReviews"
+                >Anime Reviews</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/artworks.png"
+                class="nav-icons"
+                alt="Kirby 64 Painting"
+              /><a href="artworks.html" class="nav-links" id="navArtworks"
+                >Artworks</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-categories">
+            <span>Entertainment</span>
+            <div class="nav-items">
+              <img
+                src="images/music-player.png"
+                class="nav-icons"
+                alt="Mike Kirby"
+              /><a
+                href="music_player.html"
+                class="nav-links"
+                id="navMusicPlayer"
+                >Music Player ♪</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/mini-tv.png"
+                class="nav-icons"
+                alt="Cartoonish CRT TV"
+              /><a href="crt_television.html" class="nav-links" id="navCRT"
+                >CRT Television</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/crt-television.png"
+                class="nav-icons"
+                alt="CRT TV Realistic"
+              /><a href="others/crt-tv/index.html" class="nav-links-external"
+                >Realistic CRT</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/arcade-games.png"
+                class="nav-icons"
+                alt="Pixel Mario"
+              /><a
+                href="arcade_games.html"
+                class="nav-links"
+                id="navArcadeGames"
+                >Arcade Games</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/sketchbook.png"
+                class="nav-icons"
+                alt="Adeleine from Kirby"
+              /><a
+                href="sketchbook.html"
+                class="nav-links-active"
+                id="navSketchbook"
+                >Sketchbook</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-categories">
+            <span>Cool Stuff</span>
+            <div class="nav-items">
+              <img
+                src="images/coding-tricks.png"
+                class="nav-icons"
+                alt="HTML5 Logo"
+              /><a
+                href="coding_tricks.html"
+                class="nav-links"
+                id="navCodingTricks"
+                >Coding Tricks</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/all-kirby-games.png"
+                class="nav-icons"
+                alt="Retro Kirby"
+              /><a
+                href="all_kirby_games.html"
+                class="nav-links"
+                id="navAllKirbyGames"
+                >All Kirby Games</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/miscellaneous.png"
+                class="nav-icons"
+                alt="Kirby 64 Painting 2"
+              /><a
+                href="miscellaneous.html"
+                class="nav-links"
+                id="navMiscellaneous"
+                >Miscellaneous</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/gif-collection.png"
+                class="nav-icons"
+                alt="King DeDeDe"
+              /><a
+                href="gif_collection.html"
+                class="nav-links"
+                id="navGifCollection"
+                >GIF Collection</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/guestbook.png"
+                class="nav-icons"
+                alt="Open Book"
+              /><a href="guestbook.html" class="nav-links" id="navGuestbook"
+                >My Guestbook</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-categories">
+            <span>Other Pages</span>
+            <div class="nav-items">
+              <img
+                src="images/monster-hunter-tribute.png"
+                class="nav-icons"
+                alt="Felyne"
+              /><a
+                href="others/mhfu-tribute/index.html"
+                class="nav-links-external"
+                >Monster Hunter</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/minecraft-tribute.png"
+                class="nav-icons"
+                alt="Grass Block"
+              /><a
+                href="others/minecraft-tribute/index.html"
+                class="nav-links-external"
+                >Minecraft</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/wall-e-tribute.png"
+                class="nav-icons"
+                alt="BNL Logo"
+              /><a
+                href="others/wall-e-tribute/home.html"
+                class="nav-links-external"
+                >WALL-E</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/frutigeraeroarchive.png"
+                class="nav-icons"
+                alt="Windows 7 Orb"
+              /><a
+                href="https://frutigeraeroarchive.neocities.org/"
+                class="nav-links-external"
+                >Frutiger Aero</a
+              >
+            </div>
+          </div>
+
+          <!-- Nav Music Player -->
+          <audio id="navMusic">
+            <source src="#" type="audio/mpeg" />
+          </audio>
+          <!-- Music Controls -->
+          <div class="nav-music-div">
+            <div class="nav-music-marquee">
+              <span id="currentSongInfo"
+                ><!-- Current song information will go here --></span
+              >
+            </div>
+            <nav aria-label="Music Player">
+              <div>
+                <button id="navMusicPlay">Play</button>
+                <button id="navMusicPause">Pause</button>
+              </div>
+              <div aria-label="Music Player Media Controls">
+                <button id="navMusicPrevious">Back</button>
+                <button id="navMusicNext">Next</button>
+              </div>
+            </nav>
+          </div>
+        </nav>
+      </aside>
+
+      <!-- Right Aside -->
+      <aside id="rightSiteContent">
+        <div class="aside-ads-container">
+          <span>Cool Posters</span>
+          <img
+            src="images/sidebars/azumanga.jpg"
+            alt="Azumanga Daioh Poster"
+            title="Azumanga Daioh"
+          />
+          <img
+            src="images/sidebars/renge.jpg"
+            alt="Renge Miyauchi Poster"
+            title="Renge Miyauchi"
+          />
+          <img
+            src="images/sidebars/nichijou.jpg"
+            alt="Nichijou Poster"
+            title="Nichijou"
+          />
+          <img
+            src="images/sidebars/kirby_gameboy.jpg"
+            alt="Ad for Kirby Game Boy game"
+            title="Kirby Tilt 'n' Tumble"
+          />
+          <img
+            src="images/sidebars/yui_hirasawa.png"
+            alt="Yui Hirasawa"
+            class="sidebar-character-1"
+            title="Yui Hirasawa"
+          />
+        </div>
+      </aside>
+
+      <!-- Main Page -->
+      <main id="middleContent">
+        <!-- Sketchbook Section -->
+        <section id="paintSection">
+          <div class="paint-container">
+            <div class="paint-heading">
+              <h1>
+                Paint with Kirby
+                <img
+                  src="images/paint-kirby.png"
+                  class="paint-heading-img-1"
+                />
+              </h1>
+            </div>
+            <iframe src="https://jspaint.app/"></iframe>
+          </div>
+
+          <div class="paint-gallery-submit-container text-containers-main-bg">
+            <h2>Submit your drawings! (Closed for now)</h2>
+            <p>
+              Submissions closed for now as I'm too busy to work on the site.
+            </p>
+            <p style="text-decoration: line-through">
+              Send me your creations so I can add them to the gallery with the
+              form below. You can send drawings made using the app above or a
+              classic paint software in your PC. It may take a few days for me
+              to go and read my emails, and then add the drawing, so don't worry
+              if they don't appear right away. 4:3 aspect ratio is preferred,
+              but not obligated. I will crop your image myself if there's a lot
+              of empty space.
+            </p>
+          </div>
+
+          <!-- <div class="paint-gallery-submit-container text-containers-main-bg">
+            <h2>Gallery Form</h2>
+
+            <form
+              action="https://formsubmit.co/daniele63web@hotmail.com"
+              enctype="multipart/form-data"
+              method="POST"
+              id="galleryForm"
+            >
+              <input
+                type="hidden"
+                name="_url"
+                value="https://daniele63.com/pages/sketchbook.html"
+              />
+
+              <label for="name">Name (Required)</label>
+              <input
+                type="text"
+                name="name"
+                placeholder="What is your name ?"
+                required
+              />
+
+              <label for="email">Email (For me to reply, optional)</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Exemple: your-email@hotmail.com"
+                name="email"
+              />
+
+              <label for="website">Website</label>
+              <input
+                type="url"
+                placeholder="https://metaknight.neocities.org"
+                name="website"
+                class="form-text-input"
+              />
+
+              <label for="title">Title (Required)</label>
+              <textarea
+                placeholder="What is your drawing's title ?"
+                class="form-title"
+                name="title"
+                rows="1"
+                required
+              ></textarea>
+
+              <label for="message">Message</label>
+              <textarea
+                placeholder="If you want to say hello, or say something about your drawing, it's here."
+                class="form-message"
+                name="message"
+                rows="3"
+              ></textarea>
+
+              <label for="image">JPG/PNG Image (*)</label>
+              <input
+                type="file"
+                name="image"
+                accept=".png, .jpg"
+                class="form-file-input"
+                required
+              />
+
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_autoresponse"
+                value="Thanks for submitting your drawing! I will review it when I can, but there is no guarantee of the image being added."
+              />
+
+              <button type="submit" id="submitButton">Submit</button>
+              <img src="../images/gifs/transfer.gif" />
+            </form>
+          </div> -->
+
+          <div class="gallery-container text-containers-main-bg">
+            <h2>Gallery</h2>
+            <div class="gallery-images-container">
+              <div class="text-containers-secondary-bg">
+                <h3>I’m not sure cat</h3>
+                <a
+                  href="images/gallery/till.jpg"
+                  target="_blank"
+                  title="I’m not sure cat"
+                >
+                  <img src="images/gallery/till.jpg" />
+                </a>
+                <h4>
+                  <span>06/04/2025 - till</span>
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>Kirbys</h3>
+                <a
+                  href="images/gallery/Kirbyys.jpg"
+                  target="_blank"
+                  title="Kirbys"
+                >
+                  <img src="images/gallery/Kirbyys.jpg" />
+                </a>
+                <h4>
+                  <span>04/04/2025 - Edylc</span>
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>Vans Old Skool Shoes</h3>
+                <a
+                  href="images/gallery/Vans%20Old%20Skool%20Shoes.jpg"
+                  target="_blank"
+                  title="Vans Old Skool Shoes"
+                >
+                  <img src="images/gallery/Vans%20Old%20Skool%20Shoes.jpg" />
+                </a>
+                <h4>
+                  <span>25/03/2025 -</span>
+                  <a
+                    href="https://superawesomewebsite.neocities.org/"
+                    target="_blank"
+                    >Blue</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>Poor Kirby</h3>
+                <a
+                  href="images/gallery/renata.jpg"
+                  target="_blank"
+                  title="Hi! Here's my poor funky kirby haha"
+                >
+                  <img src="images/gallery/renata.jpg" />
+                </a>
+                <h4>
+                  <span>25/03/2025 -</span>
+                  <a href="https://re-nata.neocities.org/" target="_blank"
+                    >Renata</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>Waddledee</h3>
+                <a
+                  href="images/gallery/waddledee.jpg"
+                  target="_blank"
+                  title="Waddledee"
+                >
+                  <img src="images/gallery/waddledee.jpg" />
+                </a>
+                <h4>
+                  <span>15/03/2025 -</span>
+                  <a href="https://peachdoggo.neocities.org/" target="_blank"
+                    >Peachdoggo</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>bis gus</h3>
+                <a
+                  href="images/gallery/bigguspaint.jpg"
+                  target="_blank"
+                  title="bis gus"
+                >
+                  <img src="images/gallery/bigguspaint.jpg" />
+                </a>
+                <h4>
+                  <span>15/03/2025 -</span>
+                  <a href="https://g3c4u.neocities.org/Gus" target="_blank"
+                    >g3c</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>kirby</h3>
+                <a
+                  href="images/gallery/kirby.jpg"
+                  target="_blank"
+                  title="kirby"
+                >
+                  <img src="images/gallery/kirby.jpg" />
+                </a>
+                <h4><span>14/03/2025 -</span>yay</h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>Konata give you a thumbs up</h3>
+                <a
+                  href="images/gallery/crapykoata.jpg"
+                  target="_blank"
+                  title="Konata give you a thumbs up"
+                >
+                  <img src="images/gallery/crapykoata.jpg" />
+                </a>
+                <h4><span>08/03/2025 -</span>Kai (・ω<)</h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>Roboom</h3>
+                <a
+                  href="images/gallery/robot.gif"
+                  target="_blank"
+                  title="Roboom"
+                >
+                  <img src="images/gallery/robot.gif" />
+                </a>
+                <h4>
+                  <span>02/03/2025 -</span>
+                  <a href="https://loftus.neocities.org/" target="_blank"
+                    >boyloftus</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>Kirb</h3>
+                <a href="images/gallery/Kirb.jpg" target="_blank" title="Kirb">
+                  <img src="images/gallery/Kirb.jpg" />
+                </a>
+                <h4>
+                  <span>02/03/2025 -</span>
+                  <a href="https://blueazul.neocities.org/" target="_blank"
+                    >Blue</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>doggo</h3>
+                <a
+                  href="images/gallery/doggo%20art.jpg"
+                  target="_blank"
+                  title="doggo"
+                >
+                  <img src="images/gallery/doggo%20art.jpg" />
+                </a>
+                <h4><span>17/02/2025 -</span>g3c</h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>Kirbeh Reel :)</h3>
+                <a
+                  href="images/gallery/Kirbeh.jpg"
+                  target="_blank"
+                  title="Kirbeh Reel :)"
+                >
+                  <img src="images/gallery/Kirbeh.jpg" />
+                </a>
+                <h4>
+                  <span>13/02/2025 -</span>
+                  <a
+                    href="https://windowsfan88888.neocities.org/"
+                    target="_blank"
+                    >Windowsfan88888</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>Squid</h3>
+                <a
+                  href="images/gallery/squid.jpg"
+                  target="_blank"
+                  title="Squid"
+                >
+                  <img src="images/gallery/squid.jpg" />
+                </a>
+                <h4>
+                  <span>12/02/2025 -</span>
+                  <a href="https://seamuskills.com/" target="_blank"
+                    >Seamus Donahue</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>pink!!</h3>
+                <a
+                  href="images/gallery/love%20and%20kirby.jpg"
+                  target="_blank"
+                  title="pink!!"
+                >
+                  <img src="images/gallery/love%20and%20kirby.jpg" />
+                </a>
+                <h4>
+                  <span>25/01/2025 -</span>
+                  <a href="https://sp3ct.neocities.org/" target="_blank"
+                    >sp3ct</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>Kirby Plays Hockey</h3>
+                <a
+                  href="images/gallery/kirbyplayshockey.jpg"
+                  target="_blank"
+                  title="Kirby Plays Hockey"
+                >
+                  <img src="images/gallery/kirbyplayshockey.jpg" />
+                </a>
+                <h4>
+                  <span>24/01/2025 -</span>
+                  <a href="https://bnwilliam.neocities.org/" target="_blank"
+                    >BNWilliam</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>Ze Baby by Doinky</h3>
+                <a
+                  href="images/gallery/Ze%20Baby%20by%20Doinky.jpg"
+                  target="_blank"
+                  title="Ze Baby by Doinky"
+                >
+                  <img src="images/gallery/Ze%20Baby%20by%20Doinky.jpg" />
+                </a>
+                <h4>
+                  <span>18/01/2025 -</span>
+                  <a
+                    href="https://mahoushoujodoinky.neocities.org/"
+                    target="_blank"
+                    >MahouShoujoDoinky</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>Yo-!</h3>
+                <a
+                  href="images/gallery/SonaMSPaint.jpg"
+                  target="_blank"
+                  title="Yo-!"
+                >
+                  <img src="images/gallery/SonaMSPaint.jpg" />
+                </a>
+                <h4>
+                  <span>16/01/2025 -</span>
+                  <a href="https://thesonaplace.straw.page/" target="_blank"
+                    >Sona</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>regarts from Atlantis</h3>
+                <a
+                  href="images/gallery/regards%20from%20Atlantis.jpg"
+                  target="_blank"
+                  title="regarts from Atlantis"
+                >
+                  <img src="images/gallery/regards%20from%20Atlantis.jpg" />
+                </a>
+                <h4>
+                  <span>16/01/2025 -</span>
+                  <a href="https://angels-bride.neocities.org/" target="_blank"
+                    >angelsbride</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>!!!11</h3>
+                <a
+                  href="images/gallery/kirby_ean.jpg"
+                  target="_blank"
+                  title="!!!11"
+                >
+                  <img src="images/gallery/kirby_ean.jpg" />
+                </a>
+                <h4>
+                  <span>15/01/2025 -</span>
+                  <a href="https://enwelld.neocities.org/" target="_blank"
+                    >EnWelld</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>hiii~!</h3>
+                <a
+                  href="images/gallery/hiii.jpg"
+                  target="_blank"
+                  title="hiii (awesome drawing btw)"
+                  ><img src="images/gallery/hiii.jpg"
+                /></a>
+                <h4>
+                  <span>13/01/2025 -</span>
+                  <a href="https://nomnomnami.com/" target="_blank">nami</a>
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>Nintendo Controllers</h3>
+                <a
+                  href="images/gallery/Controllers.jpg"
+                  target="_blank"
+                  title="Nintendo Controllers"
+                >
+                  <img src="images/gallery/Controllers.jpg" />
+                </a>
+                <h4><span>05/01/2025 -</span> Edylc</h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>stickman honest opinion!!11!</h3>
+                <a
+                  href="images/gallery/hooray.jpg"
+                  target="_blank"
+                  title="hooray"
+                >
+                  <img src="images/gallery/hooray.jpg" />
+                </a>
+                <h4>
+                  <span>30/12/2024 -</span>
+                  <a href="https://elprin.neocities.org/" target="_blank"
+                    >elpr</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>BUFFF</h3>
+                <a
+                  href="images/gallery/BEAR.jpg"
+                  target="_blank"
+                  title="BUFF BEAAR"
+                >
+                  <img src="images/gallery/BEAR.jpg" />
+                </a>
+                <h4>
+                  <span>17/12/2024 -</span>
+                  <a
+                    href="https://arandomnobody07.neocities.org/"
+                    target="_blank"
+                    >ARandomNobody07</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>Ciao Sonic Adventure 2</h3>
+                <a
+                  href="images/gallery/ChaoSonic.jpg"
+                  target="_blank"
+                  title="The chao looks frutiger aero"
+                >
+                  <img src="images/gallery/ChaoSonic.jpg" />
+                </a>
+                <h4>
+                  <span>16/12/2024 -</span>
+                  <a href="https://digitalaero.neocities.org/" target="_blank"
+                    >DigitalAero</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>add a great big smile...</h3>
+                <a
+                  href="images/gallery/bunny.jpg"
+                  target="_blank"
+                  title="and presto, it's kirby!"
+                >
+                  <img src="images/gallery/bunny.jpg" />
+                </a>
+                <h4><span>15/12/2024 -</span> bunny</h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>susie!! :D</h3>
+                <a href="images/gallery/susie%21%21.jpg" target="_blank">
+                  <img src="images/gallery/susie%21%21.jpg" />
+                </a>
+                <h4><span>03/12/2024 -</span> annon</h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>Unexpected Visitor</h3>
+                <a href="images/gallery/spinebreaker.jpg" target="_blank">
+                  <img src="images/gallery/spinebreaker.jpg" />
+                </a>
+                <h4>
+                  <span>03/12/2024 -</span>
+                  <a href="https://spinebreaker.neocities.org/" target="_blank"
+                    >Spine</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>pacman</h3>
+                <a href="images/gallery/Dibujo.jpg" target="_blank">
+                  <img src="images/gallery/Dibujo.jpg" />
+                </a>
+                <h4>
+                  <span>06/11/2024 -</span>
+                  <a
+                    href="https://mybeatifuldarkwebsite.neocities.org/"
+                    target="_blank"
+                    >omanaHP</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>water</h3>
+                <a href="images/gallery/water.jpg" target="_blank">
+                  <img src="images/gallery/water.jpg" />
+                </a>
+                <h4>
+                  <span>03/11/2024 -</span>
+                  <a href="https://ordainedmotion.neocities.org/" target="_blank"
+                    >water</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>Marikyuunn</h3>
+                <a href="images/gallery/werasd293.jpg" target="_blank">
+                  <img src="images/gallery/werasd293.jpg" />
+                </a>
+                <h4>
+                  <span>02/11/2024 -</span>
+                  <a href="https://werasd293.com/" target="_blank">Werasd293</a>
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>Kirby had too much coffee.</h3>
+                <a
+                  href="images/gallery/kirby___.jpg"
+                  target="_blank"
+                  title="Kirby had too much coffee."
+                >
+                  <img src="images/gallery/kirby___.jpg" />
+                </a>
+                <h4><span>27/10/2024 -</span> Kirbyfan666</h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>The Goobson Comic's is coming to town!!!</h3>
+                <a href="images/gallery/goobsoncomic%21.jpg" target="_blank">
+                  <img src="images/gallery/goobsoncomic%21.jpg" />
+                </a>
+                <h4>
+                  <span>26/10/2024 -</span>
+                  <a href="https://winbuffr.neocities.org/" target="_blank"
+                    >fdai</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>kirby poyo</h3>
+                <a
+                  href="images/gallery/kirbypoyo.jpg"
+                  target="_blank"
+                  title="i just like kirby, great site"
+                >
+                  <img src="images/gallery/kirbypoyo.jpg" />
+                </a>
+                <h4><span>25/10/2024 -</span>frazzy</h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>lol</h3>
+                <a
+                  href="images/gallery/kirbo.jpg"
+                  target="_blank"
+                  title="lol"
+                >
+                  <img src="images/gallery/kirbo.jpg" />
+                </a>
+                <h4>
+                  <span>17/10/2024 -</span>
+                  <a href="http://makoenergy.neocities.org/" target="_blank"
+                    >mako</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>Kirby Balls</h3>
+                <a href="images/gallery/Kirby%20Balls.jpg" target="_blank">
+                  <img src="images/gallery/Kirby%20Balls.jpg" />
+                </a>
+                <h4>
+                  <span>13/10/2024 -</span>
+                  <a href="https://thatwitecat.neocities.org/" target="_blank"
+                    >ThatWiteCat</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>little doodle with mike and kirby :]</h3>
+                <a href="images/gallery/haveaniceday.jpg" target="_blank">
+                  <img src="images/gallery/haveaniceday.jpg" />
+                </a>
+                <h4>
+                  <span>10/10/2024 -</span>
+                  <a href="https://knightlybloom.neocities.org/" target="_blank"
+                    >KnightlyBloom</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>MSPAINTKIRBY</h3>
+                <a href="images/gallery/MSPAINTKIRBY.jpg" target="_blank">
+                  <img src="images/gallery/MSPAINTKIRBY.jpg" />
+                </a>
+                <h4>
+                  <span>09/10/2024 -</span>
+                  <a href="https://dukadhd.neocities.org/" target="_blank"
+                    >DUKADHD</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>Azumarill XP</h3>
+                <a href="images/gallery/Azumarill%20XP.jpg" target="_blank">
+                  <img src="images/gallery/Azumarill%20XP.jpg" />
+                </a>
+                <h4>
+                  <span>09/10/2024 -</span>
+                  <a href="https://polkadot13.neocities.org/" target="_blank"
+                    >Ingrid</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>tom</h3>
+                <a href="images/gallery/tom.jpg" target="_blank">
+                  <img src="images/gallery/tom.jpg" />
+                </a>
+                <h4><span>07/10/2024 -</span> Tom</h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>kirbs by goblina</h3>
+                <a href="images/gallery/goblina.jpg" target="_blank">
+                  <img src="images/gallery/goblina.jpg" />
+                </a>
+                <h4>
+                  <span>04/09/2024 -</span>
+                  <a href="https://goblina.neocities.org/" target="_blank"
+                    >goblina</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>shread</h3>
+                <a
+                  href="images/gallery/shread.jpg"
+                  target="_blank"
+                  title="cool site."
+                >
+                  <img src="images/gallery/shread.jpg" />
+                </a>
+                <h4><span>29/08/2024 -</span> shread</h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>Marx</h3>
+                <a href="images/gallery/hansov.jpg" target="_blank">
+                  <img src="images/gallery/hansov.jpg" />
+                </a>
+                <h4>
+                  <span>29/08/2024 -</span>
+                  <a href="https://hansov-bone.neocities.org/" target="_blank"
+                    >Hansov</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>kriby</h3>
+                <a
+                  href="images/gallery/kriby.jpg"
+                  target="_blank"
+                  title="I'm really bad at drawing with a mouse"
+                >
+                  <img src="images/gallery/kriby.jpg" />
+                </a>
+                <h4>
+                  <span>11/08/2024 -</span>
+                  <a href="https://thiscat.neocities.org/" target="_blank"
+                    >thiscat</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>snuhd</h3>
+                <a href="images/gallery/skyler.jpg" target="_blank">
+                  <img src="images/gallery/skyler.jpg" />
+                </a>
+                <h4>
+                  <span>08/08/2024 -</span>
+                  <a
+                    href="https://xemo-screamo-boyx.neocities.org/"
+                    target="_blank"
+                    >Skyler</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>random doodle of a tombyoish girl ^__^</h3>
+                <a href="images/gallery/ruliaga.jpg" target="_blank">
+                  <img src="images/gallery/ruliaga.jpg" />
+                </a>
+                <h4>
+                  <span>06/08/2024 -</span>
+                  <a href="https://ruliaga.neocities.org/" target="_blank"
+                    >Ruliaga</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>daroach</h3>
+                <a href="images/gallery/daroach.jpg" target="_blank">
+                  <img src="images/gallery/daroach.jpg" />
+                </a>
+                <h4>
+                  <span>28/07/2024 -</span>
+                  <a href="https://drawcia.neocities.org/" target="_blank"
+                    >Drawcia</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>Outdated Reference</h3>
+                <a href="images/gallery/enwelld.jpg" target="_blank">
+                  <img src="images/gallery/enwelld.jpg" />
+                </a>
+                <h4>
+                  <span>27/07/2024 -</span>
+                  <a href="https://enwelld.neocities.org/" target="_blank"
+                    >EnWelld</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>chinchilla</h3>
+                <a href="images/gallery/chinchilla.jpg" target="_blank">
+                  <img src="images/gallery/chinchilla.jpg" />
+                </a>
+                <h4><span>25/07/2024 -</span> chinchilla</h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>D A N I E L E</h3>
+                <a href="images/gallery/joshuatow.jpg" target="_blank">
+                  <img src="images/gallery/joshuatow.jpg" />
+                </a>
+                <h4><span>20/07/2024 -</span> joshuatow</h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>coolcat</h3>
+                <a href="images/gallery/coolcat.jpg" target="_blank">
+                  <img src="images/gallery/coolcat.jpg" />
+                </a>
+                <h4>
+                  <span>07/07/2024 -</span>
+                  <a
+                    href="https://valerievalentine.neocities.org/"
+                    target="_blank"
+                    >valerievalentine</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>Kirby</h3>
+                <a href="images/gallery/bgquestionmark.jpg" target="_blank">
+                  <img src="images/gallery/bgquestionmark.jpg" />
+                </a>
+                <h4>
+                  <span>29/06/2024 -</span>
+                  <a
+                    href="https://bgquestionmark.neocities.org/"
+                    target="_blank"
+                    >bgquestionmark</a
+                  >
+                </h4>
+              </div>
+
+              <div class="text-containers-secondary-bg">
+                <h3>Old School Dedede</h3>
+                <a href="images/gallery/graymin.jpg" target="_blank">
+                  <img src="images/gallery/graymin.jpg" />
+                </a>
+                <h4>
+                  <span>04/06/2024 -</span>
+                  <a href="https://sylphofeons.neocities.org/" target="_blank"
+                    >Graymin</a
+                  >
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="thanks-div text-containers-main-bg">
+            <p>Thank you for all your drawings !</p>
+          </div>
+        </section>
+      </main>
+
+      <footer id="bottomFooter">
+        <span>2022-2025 &copy;Daniele63</span><br />
+        <a href="mailto:daniele63web@hotmail.com">e-mail</a>
+        <a href="https://ko-fi.com/daniele63">ko-fi</a>
+        <a href="https://spacehey.com/daniele63">spacehey</a>
+        <a href="https://www.bitview.net/user/Daniele">bitview</a>
+        <a href="https://neocities.org/site/daniele63">neocities</a>
+      </footer>
+      <!-- Spacer -->
+      <div id="websiteSpacerBottom"></div>
+    </div>
+    <!-- Javascript -->
+    <script src="javascript/nav-music.js"></script>
+  </body>
+</html>

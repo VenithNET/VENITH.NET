@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Daniele's Website - Music Player</title>
+    <meta
+      name="description"
+      content="A Kirby-themed music player inspired by a winamp skin that is fully functional, written in Javascript."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/music_player.css" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Daniele" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <!-- Canonical tag -->
+    <link rel="canonical" href="music_player.html" />
+  </head>
+
+  <body id="body">
+    <!---Site Container--->
+    <div id="websiteContainer">
+      <!-- Spacer -->
+      <div id="websiteSpacerTop"></div>
+      <!-- Header -->
+      <header id="header">
+        <img
+          src="images/header-logo.png"
+          alt="Logo and Title"
+          class="header-logo"
+        />
+      </header>
+
+      <!-- Left Aside -->
+      <aside id="leftSiteContent">
+        <!-- Main Navigation -->
+        <nav id="leftNav" aria-label="Main Navigation">
+          <div class="nav-categories">
+            <span>This Website</span>
+            <div class="nav-items">
+              <img
+                src="images/home.png"
+                class="nav-icons"
+                alt="Kirby's house"
+              /><a href="index.html" class="nav-links" id="navHome">Home</a>
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/site-info.png"
+                class="nav-icons"
+                alt="Blue Kirby"
+              /><a href="site_info.html" class="nav-links" id="navSiteInfo"
+                >Site Info</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/past-versions.png"
+                class="nav-icons"
+                alt="Star"
+              /><a
+                href="past_versions.html"
+                class="nav-links"
+                id="navPastVersions"
+                >Past Versions</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-categories">
+            <span>Personal</span>
+            <div class="nav-items">
+              <img src="images/about-me.png" class="nav-icons" alt="Kirby" /><a
+                href="about_me.html"
+                class="nav-links"
+                id="navAboutMe"
+                >About Me</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/favorite-games.png"
+                class="nav-icons"
+                alt="N64 Logo"
+              /><a
+                href="favorite_games.html"
+                class="nav-links"
+                id="navFavoriteGames"
+                >Favorite Games</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/anime-reviews.png"
+                class="nav-icons"
+                alt="Konata Izumi"
+              /><a
+                href="anime_reviews.html"
+                class="nav-links"
+                id="navAnimeReviews"
+                >Anime Reviews</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/artworks.png"
+                class="nav-icons"
+                alt="Kirby 64 Painting"
+              /><a href="artworks.html" class="nav-links" id="navArtworks"
+                >Artworks</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-categories">
+            <span>Entertainment</span>
+            <div class="nav-items">
+              <img
+                src="images/music-player.png"
+                class="nav-icons"
+                alt="Mike Kirby"
+              /><a
+                href="music_player.html"
+                class="nav-links-active"
+                id="navMusicPlayer"
+                >Music Player ♪</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/mini-tv.png"
+                class="nav-icons"
+                alt="Cartoonish CRT TV"
+              /><a href="crt_television.html" class="nav-links" id="navCRT"
+                >CRT Television</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/crt-television.png"
+                class="nav-icons"
+                alt="CRT TV Realistic"
+              /><a href="others/crt-tv/index.html" class="nav-links-external"
+                >Realistic CRT</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/arcade-games.png"
+                class="nav-icons"
+                alt="Pixel Mario"
+              /><a
+                href="arcade_games.html"
+                class="nav-links"
+                id="navArcadeGames"
+                >Arcade Games</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/sketchbook.png"
+                class="nav-icons"
+                alt="Adeleine from Kirby"
+              /><a href="sketchbook.html" class="nav-links" id="navSketchbook"
+                >Sketchbook</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-categories">
+            <span>Cool Stuff</span>
+            <div class="nav-items">
+              <img
+                src="images/coding-tricks.png"
+                class="nav-icons"
+                alt="HTML5 Logo"
+              /><a
+                href="coding_tricks.html"
+                class="nav-links"
+                id="navCodingTricks"
+                >Coding Tricks</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/all-kirby-games.png"
+                class="nav-icons"
+                alt="Retro Kirby"
+              /><a
+                href="all_kirby_games.html"
+                class="nav-links"
+                id="navAllKirbyGames"
+                >All Kirby Games</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/miscellaneous.png"
+                class="nav-icons"
+                alt="Kirby 64 Painting 2"
+              /><a
+                href="miscellaneous.html"
+                class="nav-links"
+                id="navMiscellaneous"
+                >Miscellaneous</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/gif-collection.png"
+                class="nav-icons"
+                alt="King DeDeDe"
+              /><a
+                href="gif_collection.html"
+                class="nav-links"
+                id="navGifCollection"
+                >GIF Collection</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/guestbook.png"
+                class="nav-icons"
+                alt="Open Book"
+              /><a href="guestbook.html" class="nav-links" id="navGuestbook"
+                >My Guestbook</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-categories">
+            <span>Other Pages</span>
+            <div class="nav-items">
+              <img
+                src="images/monster-hunter-tribute.png"
+                class="nav-icons"
+                alt="Felyne"
+              /><a
+                href="others/mhfu-tribute/index.html"
+                class="nav-links-external"
+                >Monster Hunter</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/minecraft-tribute.png"
+                class="nav-icons"
+                alt="Grass Block"
+              /><a
+                href="others/minecraft-tribute/index.html"
+                class="nav-links-external"
+                >Minecraft</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/wall-e-tribute.png"
+                class="nav-icons"
+                alt="BNL Logo"
+              /><a
+                href="others/wall-e-tribute/home.html"
+                class="nav-links-external"
+                >WALL-E</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/frutigeraeroarchive.png"
+                class="nav-icons"
+                alt="Windows 7 Orb"
+              /><a
+                href="https://frutigeraeroarchive.neocities.org/"
+                class="nav-links-external"
+                >Frutiger Aero</a
+              >
+            </div>
+          </div>
+
+          <!-- Nav Music Player -->
+          <audio id="navMusic">
+            <source src="#" type="audio/mpeg" />
+          </audio>
+          <!-- Music Controls -->
+          <div class="nav-music-div">
+            <div class="nav-music-marquee">
+              <span id="currentSongInfo"
+                ><!-- Current song information will go here --></span
+              >
+            </div>
+            <nav aria-label="Music Player">
+              <div>
+                <button id="navMusicPlay">Play</button>
+                <button id="navMusicPause">Pause</button>
+              </div>
+              <div aria-label="Music Player Media Controls">
+                <button id="navMusicPrevious">Back</button>
+                <button id="navMusicNext">Next</button>
+              </div>
+            </nav>
+          </div>
+        </nav>
+      </aside>
+
+      <!-- Right Aside -->
+      <aside id="rightSiteContent">
+        <div class="aside-ads-container">
+          <span>Cool Posters</span>
+          <img
+            src="images/sidebars/azumanga.jpg"
+            alt="Azumanga Daioh Poster"
+            title="Azumanga Daioh"
+          />
+          <img
+            src="images/sidebars/renge.jpg"
+            alt="Renge Miyauchi Poster"
+            title="Renge Miyauchi"
+          />
+          <img
+            src="images/sidebars/nichijou.jpg"
+            alt="Nichijou Poster"
+            title="Nichijou"
+          />
+          <img
+            src="images/sidebars/kirby_gameboy.jpg"
+            alt="Ad for Kirby Game Boy game"
+            title="Kirby Tilt 'n' Tumble"
+          />
+          <img
+            src="images/sidebars/yui_hirasawa.png"
+            alt="Yui Hirasawa"
+            class="sidebar-character-1"
+            title="Yui Hirasawa"
+          />
+        </div>
+      </aside>
+
+      <!-- Main Page -->
+      <main id="middleContent">
+        <!-- Music Player Section -->
+        <section id="musicSection">
+          <h1>Music Player ♪</h1>
+          <div class="music-body">
+            <div class="music-body-left">
+              <!-- Video -->
+              <div class="music-video">
+                <span>Now Playing:</span>
+                <div id="musicVideoPlayer"></div>
+              </div>
+
+              <!-- Playlist -->
+              <div class="music-playlist">
+                <h4>Kirby!</h4>
+                <div class="music-playlist-div">
+                  <ol>
+                    <div class="music-sections">
+                      <span>Kirby: Right Back At Ya!</span>
+                    </div>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="wp0DW7YEX4Q"
+                        >Hoshi no Kaabii - Kirby March</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="1T07MY1pNCo"
+                        >Hoshi no Kaabii - Strong Star Warrior</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="XZu7_2wkQs4"
+                        >Hoshi no Kaabii - Warp Star</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="W9Q1sBYAV4c"
+                        >Hoshi no Kaabii - Pink Visitor</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="j69rn0yx_S0"
+                        >Hoshi no Kaabii - Popstar</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="GZaoyJKkZUM"
+                        >Hoshi no Kaabii - Kirby!</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="gzTSH51nOG4"
+                        >Kirby: Right Back At Ya! Theme Song</a
+                      >
+                    </li>
+                    <div href="javascript:void(0);" class="music-sections">
+                      <span>Kirby 64</span>
+                    </div>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="gvdZ4_CQt5g"
+                        >Kirby 64 - Pop Star</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="yCtQR4AdeYg"
+                        >Kirby 64 - Quiet Forest</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="_OGMy1LSWjM"
+                        >Kirby 64 - Rock Star Quicksand</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="6-skm1f8tYw"
+                        >Kirby 64 - Boss Battle</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="QWiztiajOtI"
+                        >Kirby 64 - Rock Star</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="tuj1bQrBy74"
+                        >Kirby 64 - Ruins</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="nXyIvykEmmw"
+                        >Kirby 64 - Aqua Star</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="oea7wOT8eKI"
+                        >Kirby 64 - Mountain Stream</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="AcdGyC83trA"
+                        >Kirby 64 - Neo Star</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="8HoLdtRi9LA"
+                        >Kirby 64 - Shiver Star</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="cEfpKtXJI-w"
+                        >Kirby 64 - Above The Clouds</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="GleWK8NOmUk"
+                        >Kirby 64 - Ripple Star</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="oRJE2SSldXY"
+                        >Kirby 64 - Miracle Matter Battle</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="8Jj4JtAW4-s"
+                        >Kirby 64 - End Credits</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="w25153TcHnQ"
+                        >Kirby 64 - Training Theme</a
+                      >
+                    </li>
+                    <div href="javascript:void(0);" class="music-sections">
+                      <span>Other Kirby Games</span>
+                    </div>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="C5YNxvk0qyM"
+                        >Kirby's Return to Dream Land - Cookie Country</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="oMgQJEcVToY"
+                        >Kirby's Return to Dream Land - Title Theme 8 Bit
+                        Remix</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="r1PMcDSarhQ"
+                        >Kirby and the Rainbow Paintbrush - The Beginning of a
+                        Journey
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="Se1uh3PS78Y"
+                        >Kirby: Super Star - Gourmet Race</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="SPSQV7kT4PU"
+                        >Kirby Fighters Deluxe - King Dedede</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="twPSaCABakA"
+                        >Kirby's Dream Land - Green Greens</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="OHhQqDdqko0"
+                        >Kirby Tilt 'n' Tumble - Water Stage</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="JWQE9AaJ70o"
+                        >Kirby's Block Ball - Stage 1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="JFCKPL5qMK0"
+                        >Kirby's Dream Land - Green Greens [Remix]</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="K7qlMgKeR0E"
+                        >Kirby's Dream Land 3 - Grass Land 1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="B2-3SFsYprw"
+                        >Kirby's Dream Land 3 - Grass Land 2</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="mIAhvHSj1_I"
+                        >Kirby's Dream Land 3 - Ripple Field 1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="zJRXZS90Yas"
+                        >Kirby's Dream Land 3 - Casting</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="G3TVnDP1zs8"
+                        >Kirby's Dream Land 3 - Credits</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="6Y1Sv_PSKgc"
+                        >Kirby & The Amazing Mirror - Rainbow Route (Area 1)</a
+                      >
+                    </li>
+                    <div class="music-sections">
+                      <span>Super Smash Bros</span>
+                    </div>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="qJBmV1KjuVA"
+                        >Butter Building - Super Smash Bros. Brawl</a
+                      >
+                    </li>
+                    <div class="music-sections">
+                      <span>Super Mario World / Land</span>
+                    </div>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="tOxhfS7KT_o"
+                        >Super Mario Land - Overworld (Birabuto Kingdom)
+                        [Remix]</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="CxKTbcs1t7M"
+                        >Super Mario World - Athletic</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="B9GNZ8r3ot8"
+                        >Super Mario World 2 - Athletic</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="1nFzCK8gGKI"
+                        >Super Mario - Athletic Themes Medley</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="W9urNCVWnh8"
+                        >Super Mario World - Athletic Theme [Remix]</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="c5SfW8MQtFM"
+                        >Super Mario World Super Mario Advance 2 - Underwater</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="ojy-UvLF3iM"
+                        >Super Mario World Super Mario Advance 2 - Ending
+                        Credits</a
+                      >
+                    </li>
+                    <div class="music-sections">
+                      <span>Super Mario 64</span>
+                    </div>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="G4AlwkwyQH0"
+                        >Super Mario 64 Remastered - File Select</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="8raQUS6Daoo"
+                        >Super Mario 64 - Bob-omb Battlefield [Remix]</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="4_hoscdtefI"
+                        >Super Mario 64 - Snow Mountain [Remix]</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="3HKAkfx3LVw"
+                        >SM64: Snow Mountain: Orchestral Arrangement</a
+                      >
+                    </li>
+                    <div class="music-sections">
+                      <span>Mario Kart</span>
+                    </div>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="s0veQ0op_TY"
+                        >Mario Kart Double Dash!! - Circuit Theme</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="anNkuBr0LOQ"
+                        >Mario Kart Double Dash!! - Waluigi Stadium & Wario
+                        Colosseum</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="cscuCIzItZQ"
+                        >Mario Kart Wii - Coconut Mall</a
+                      >
+                    </li>
+                    <div class="music-sections">
+                      <span>Mario Party</span>
+                    </div>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="vHcMArHUYK4"
+                        >Mario Party 1 - Tropical Island</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="tFvIhW4ZNP0"
+                        >Mario Party 1 - Birthday Cake</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="fRZq6lX1Exk"
+                        >Mario Party 2 - Horror Land</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="i_v-vPd_3b0"
+                        >Mario Party 3 - Woody Woods</a
+                      >
+                    </li>
+                    <div class="music-sections">
+                      <span>Yoshi Games</span>
+                    </div>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="NgS0-wV9LOo"
+                        >Yoshi's Island DS - Wildlands</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="DoCkfgzOV44"
+                        >Yoshi's Woolly World - Yarn Yoshi Takes Shape!</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="x4dII4xy1qA"
+                        >Yoshi's Island - Athletic (SMW Style)</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="jigKJ8p15z8"
+                        >Yoshi's Island - Athletic Theme [Remix]</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="PN3QFRt5KY0"
+                        >Yoshi's Island - Flower Garden [Remix]</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="A_agcsq4kgM"
+                        >Yoshi's Island - Flower Garden Arrangement</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="ET_4a6E7zXw"
+                        >Yoshi's Story - Ending Brawl Techno</a
+                      >
+                    </li>
+                    <div class="music-sections">
+                      <span>Pokemon Games</span>
+                    </div>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="WLfMbsr45Yk"
+                        >Pokemon: HeartGold & SoulSilver - Poke Mart</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="HC7jhFCF4sY"
+                        >Pokemon: HeartGold & SoulSilver - Surf</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="4VIq430Y6ys"
+                        >Pokemon: HeartGold & SoulSilver - National Park</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="TH4pD3Qmkfg"
+                        >Pokemon Black/White - Route 6 (Winter) Arrangement</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="t22AVB12TUY"
+                        >Pokemon Mystery Dungeon - File Select Arrangement</a
+                      >
+                    </li>
+                    <div class="music-sections">
+                      <span>Pokemon Anime</span>
+                    </div>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="jVm1NbrXaXc"
+                        >Pokemon Season 1 Theme (French)</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="_2qUusW6is0"
+                        >Pokemon Season 1 Theme (English)</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="U9n7_3dEcaQ"
+                        >Pokemon Season 1 Music: Setting off</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="lQW0DrsHJFE"
+                        >Pokemon Season 1 Music: Silly Psyduck</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="7aYn752VXtc"
+                        >Pokemon Season 1 Music: Team Rocket's Motto</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="L5wyctbkgGk"
+                        >Pokemon Season 1 Music: Burning Battle Field</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="Iioj2kbCBr8"
+                        >Pokemon Season 1 Music: Prayer</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="NaJESjjVQ9M"
+                        >Pokemon Season 1 Music: Reunion</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="sKDsX1cRkwY"
+                        >Pokemon Season 1 Music: Total War</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="ShZM5zqg1sM"
+                        >Pokemon Season 1 Music: Persistant Pokemon</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="i109L_cuN6E"
+                        >Pokemon Season 1 Music: The matter's settled</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="7Gs4Ze7XMAE"
+                        >Pokemon Season 1 Music: To be continued</a
+                      >
+                    </li>
+                    <div class="music-sections">
+                      <span>Banjo Kazooie</span>
+                    </div>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="ZKAnvXN8tMY"
+                        >Banjo Kazooie - Freezeezy Peak Remaster</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="IlzflkN7g-U"
+                        >Banjo Kazooie - Spiral Mountain</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="o84aZ6iQoKA"
+                        >Banjo Kazooie - Mumbo's Mountain</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="pGWwe4OysKA"
+                        >Banjo Kazooie - Main Title</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="tfdwMcnPcq8"
+                        >Banjo Kazooie - Spiral Mountain Remastered</a
+                      >
+                    </li>
+                    <div class="music-sections">
+                      <span>Monster Hunter</span>
+                    </div>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="__QdAxqBi5Y"
+                        >MHFU - Pokke Village Theme</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="hN7eC6PF6jg"
+                        >MHFU - Pokke Farm</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="jK39vwlBpTw"
+                        >MHFU - Kitchen Theme</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="kKrb3I-Tbk0"
+                        >MHFU - Guild Hall Theme</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="Q90AgFsNMMw"
+                        >MHFU - Soul of the World</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="0lacgfvuVDI"
+                        >Monster Hunter Tri - Loc Lac, Be Eternal</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="rBBhBI_Tna4"
+                        >Monster Hunter Tri - Village Theme</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="9TudLn9N3wY"
+                        >MHXX/MHGU - Bherna Village Theme</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="iSvQFpEKIwc"
+                        >MHGU/MHXX - Hub/Wycademy Theme</a
+                      >
+                    </li>
+                    <div class="music-sections">
+                      <span>Naruto</span>
+                    </div>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="We60ZX5C99I"
+                        >Afternoon of Konoha</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="O9cGGSzJOlw"
+                        >Rocks</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="RiQrbSuLrsU"
+                        >Haruka Kanata</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="Ru_GXELrnkI"
+                        >Seishun Kyousoukyoku</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="3vClLvzDOvg"
+                        >No Boy, No Cry</a
+                      >
+                    </li>
+                    <div class="music-sections">
+                      <span>Naruto Shippuden</span>
+                    </div>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="YxR3D_a7jUU"
+                        >Size of the Moon</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="a5l2OF1byrE"
+                        >Crimson Lotus</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="zVgKnfN9i34"
+                        >Silhouette</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="PZ5jBl3yJ0s"
+                        >Wind</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="X_tmHq4yhuY"
+                        >Line</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="cxbnTMrU3H0"
+                        >Blood Circulation</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="v8OhPW-Yb0k"
+                        >Empty Heart</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="3c95DbA3cjU"
+                        >Place to Try</a
+                      >
+                    </li>
+                    <div class="music-sections">
+                      <span>The Legend of Zelda</span>
+                    </div>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="gEoU70DXr90"
+                        >The Wind Waker - Main Theme</a
+                      >
+                    </li>
+                    <div class="music-sections">
+                      <span>Other Music</span>
+                    </div>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="QyTfLxVnVFE"
+                        >Dogtanian/Les Trois Mousquetaires - French Theme</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="8Ejtct8pNME"
+                        >Les Mystérieuses Cités d'or - French Theme</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="NXndwAvLVLY"
+                        >Tamagotchi Movie - Opening (English)</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="cRHkTR2tErk"
+                        >Tamagotchi Movie - Opening (French)</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="pdSHNyLoRVg"
+                        >Tamagotchi no Kira Kira Omisetchi - Main Theme</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="tOdQloaW3cc"
+                        >World Map - Mario & Luigi: Superstar Saga</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="QoReDXhenHs"
+                        >Animal Crossing - Main Theme Remaster</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="ZjJhM9HQ7A0"
+                        >Eco Creatures: Save the Forest - First Stage Theme</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="nop6CGxgCcE"
+                        >Tenchi Muyo! - Kimi no Carrot Cake</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="video-link"
+                        data-video-id="epumg-SLWDM"
+                        >Koi no Housoku/The Law of Love</a
+                      >
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <!-- Music player images -->
+            <div class="music-body-right">
+              <img src="images/kirby-painting.png" class="music-img1" />
+              <img src="images/music-player-poster.jpg" class="music-img2" />
+              <img
+                src="images/music-player-poster-2.jpg"
+                class="music-img3"
+              />
+            </div>
+          </div>
+
+          <!-- JS Version -->
+          <span class="music-credits js-content">
+            Tip: Use the Up and Down arrow keys to change the volume.
+            <br />
+            Section inspired by Ningyotsukai's
+            <a
+              href="https://skins.webamp.org/skin/4ac2ffccd4c609b2570d8320f6891567/kirby_by_ningyotsukai-d60kue9.zip/"
+              >Winamp Skin</a
+            >
+          </span>
+        </section>
+      </main>
+
+      <footer id="bottomFooter">
+        <span>2022-2025 &copy;Daniele63</span><br />
+        <a href="mailto:daniele63web@hotmail.com">e-mail</a>
+        <a href="https://ko-fi.com/daniele63">ko-fi</a>
+        <a href="https://spacehey.com/daniele63">spacehey</a>
+        <a href="https://www.bitview.net/user/Daniele">bitview</a>
+        <a href="https://neocities.org/site/daniele63">neocities</a>
+      </footer>
+      <!-- Spacer -->
+      <div id="websiteSpacerBottom"></div>
+    </div>
+    <!-- Javascript -->
+    <script async src="javascript/music-player.js"></script>
+    <script src="javascript/nav-music.js"></script>
+  </body>
+</html>

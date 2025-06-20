@@ -1,0 +1,86 @@
+/* Text Containers */
+.about-me-divs {
+  padding: 10px 10px 0px 10px;
+  margin-bottom: 12px;
+}
+
+/* Images */
+.intro-img {
+  border: 1px solid #4c5fa1;
+  width: 97px;
+  margin: 5px 6px 0px 0px;
+  float: left;
+}
+.web-img-1 {
+  width: 100px;
+  margin-right: 6px;
+  float: left;
+}
+.web-img-2 {
+  width: 80px;
+  float: right;
+}
+.music-img {
+  border: 1px solid #4c5fa1;
+  width: 90px;
+  margin: 5px 6px 0px 0px;
+  float: left;
+}
+.games-img {
+  border: 1px solid #4c5fa1;
+  width: 160px;
+  margin-left: 2px;
+  float: right;
+}
+
+/* Favorite Movies */
+.fav-movies-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.fav-movies-div img {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.253);
+  height: 105px;
+}
+
+/* Other Links */
+.other-links-div {
+  text-align: center;
+  padding-bottom: 5px;
+}
+.other-links-div a {
+  margin: 0px 2px;
+}
+
+/* CSS for very small devices */
+@media (max-width: 700px) {
+  .fav-movies-div img {
+    display: none;
+  }
+}
+
+/* CSS for Phones */
+@media (max-width: 450px) {
+  .past-versions-introduction-div img {
+    display: none;
+  }
+  .music-img {
+    display: none;
+  }
+  .games-img {
+    display: none;
+  }
+  .intro-img {
+    display: none;
+  }
+  .web-img-1 {
+    display: none;
+  }
+  .web-img-2 {
+    display: none;
+  }
+}

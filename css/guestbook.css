@@ -1,0 +1,13 @@
+#guestbookSection {
+  text-align: center;
+}
+#guestbookSection a {
+  margin-right: 5px;
+}
+#guestbookEmbed {
+  border: 3px solid #6c86e6;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.253);
+  margin-top: 12px;
+  width: 96.7%;
+  height: 620px;
+}

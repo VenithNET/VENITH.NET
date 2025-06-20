@@ -1,0 +1,535 @@
+h2 {
+  font-size: 1em;
+}
+
+/* Introduction */
+.kirby-games-greeting-div-container {
+  padding: 10px 10px 0px 10px;
+}
+.kirby-games-greeting-div-container img {
+  width: 72px;
+  margin: 8px 10px 0px 0px;
+  float: left;
+}
+
+/* Defaults */
+.console-containers {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.253);
+  padding: 10px;
+  margin-top: 15px;
+}
+.console-headers {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.253);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+}
+.console-headers span {
+  font-size: 1.1em;
+}
+.kirby-games {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 240px;
+  gap: 15px;
+  padding: 15px;
+}
+.kirby-games h2 {
+  background-image: none;
+}
+.kirby-games span {
+  display: block;
+  text-align: center;
+}
+.kirby-games p {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.253);
+  height: 113px;
+  padding: 5px;
+  overflow-y: auto;
+}
+.kirby-games img {
+  max-height: 90%;
+  max-width: 240px;
+}
+
+/* Gameboy Games */
+.console-container-gameboy {
+  background-color: #8bac0f;
+  border: 1px solid #7a9615;
+}
+.console-header-gameboy {
+  background-color: #6c8022;
+  border: 1px solid #62741e;
+}
+.console-gameboy-image {
+  max-height: 140px;
+}
+.console-gameboy-logo {
+  width: 85%;
+}
+.kirby-games-gameboy {
+  background-color: #a0bd39;
+  border: 1px solid #799126;
+}
+.kirby-games-gameboy img {
+  border: 1px solid #799126;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.253);
+}
+.kirby-games-gameboy h2 {
+  background-color: #8ba139;
+  border: 1px solid #799126;
+  color: #ccf539;
+}
+.kirby-games-gameboy p {
+  background-color: #8ba139;
+  border: 1px solid #799126;
+  scrollbar-color: #799126 #a0bd39;
+}
+
+/* Gameboy Color Games */
+.console-container-gameboy-color {
+  background-color: #d1bb40;
+  border: 1px solid #9b8b2f;
+}
+.console-header-gameboy-color {
+  background-color: #ecd23d;
+  border: 1px solid #a5932e;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.253);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+.console-gameboy-color-image {
+  max-height: 140px;
+}
+.console-gameboy-color-logo {
+  width: 85%;
+}
+.kirby-games-gameboy-color {
+  background-color: #4752e6;
+  border: 1px solid #343db8;
+}
+.kirby-games-gameboy-color img {
+  border: 1px solid #343db8;
+}
+.kirby-games-gameboy-color h2 {
+  background-color: #323cbf;
+  border: 1px solid #242b8f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.gbc-game-title-colors-1 {
+  color: #d53a3a;
+}
+.gbc-game-title-colors-2 {
+  color: #a14dfa;
+  padding: 0px;
+}
+.gbc-game-title-colors-3 {
+  color: #5eb16d;
+}
+.gbc-game-title-colors-4 {
+  color: #cab833;
+}
+.kirby-games-gameboy-color p {
+  background-color: #323cbf;
+  border: 1px solid #242b8f;
+  color: #d5d4d4;
+  scrollbar-color: #212886 #2a33ac;
+}
+
+/* Gameboy Advance Games */
+.console-container-gameboy-advance {
+  background-color: #663ab8;
+  border: 1px solid #4a278d;
+}
+.console-header-gameboy-advance {
+  background-color: #593fbf;
+  border: 1px solid #4832a2;
+}
+.console-gameboy-advance-image {
+  max-height: 140px;
+}
+.console-gameboy-advance-logo {
+  width: 85%;
+}
+.kirby-games-gameboy-advance {
+  background-color: #7452af;
+  border: 1px solid #5b3e8d;
+}
+.kirby-games-gameboy-advance img {
+  border: 1px solid #5b3e8d;
+}
+.kirby-games-gameboy-advance h2 {
+  background-color: #64429e;
+  border: 1px solid #4d307f;
+  color: #d2d2d2;
+}
+.kirby-games-gameboy-advance p {
+  background-color: #64429e;
+  border: 1px solid #4d307f;
+  color: #c6c6c6;
+  scrollbar-color: #42296d #57378e;
+}
+
+/* NES Games */
+.console-container-nes {
+  background-color: #ee3232;
+  border: 1px solid #b52626;
+}
+.console-header-nes {
+  background-color: #c12b2b;
+  border: 1px solid #9d2e2e;
+}
+.console-nes-image {
+  max-height: 140px;
+}
+.console-nes-logo {
+  width: 85%;
+}
+.kirby-games-nes {
+  background-color: #dcdcdc;
+  border: 1px solid #747474;
+}
+.kirby-games-nes img {
+  border: 1px solid #747474;
+}
+.kirby-games-nes h2 {
+  background-color: #363636;
+  border: 1px solid #747474;
+  color: #d3d3d3;
+}
+.kirby-games-nes p {
+  background-color: #888888;
+  border: 1px solid #666666;
+  scrollbar-color: #323232 #6b6b6b;
+}
+
+/* SNES Games */
+.console-container-snes {
+  background-color: #212121;
+  border: 1px solid #454545;
+}
+.console-header-snes {
+  background-color: #111111;
+  border: 1px solid #282828;
+}
+.console-header-snes span {
+  color: #e74242;
+}
+.console-snes-image {
+  max-height: 140px;
+}
+.console-snes-logo {
+  width: 85%;
+}
+.kirby-games-snes {
+  background-color: #3f3f3f;
+  border: 1px solid #525252;
+}
+.kirby-games-snes img {
+  border: 1px solid #2d2d2d;
+}
+.kirby-games-snes h2 {
+  background-color: #c82121;
+  border: 1px solid #a21d1d;
+}
+.kirby-games-snes span {
+  color: #cba123;
+}
+.kirby-games-snes p {
+  background-color: #756d6d;
+  border: 3px solid #535353;
+  color: #151515;
+  scrollbar-color: #3d3a3a #5d5656;
+}
+
+/* N64 Games */
+.console-container-n64 {
+  background-color: #ababab;
+  border: 1px solid #919191;
+}
+.console-header-n64 {
+  background-color: #d4d4d4;
+  border: 1px solid #848484;
+}
+.console-n64-image {
+  max-height: 140px;
+}
+.console-n64-logo {
+  width: 85%;
+}
+.kirby-games-n64 {
+  background-color: #d4d4d4;
+  border: 1px solid #848484;
+}
+.kirby-games-n64 img {
+  border: 1px solid #2d2d2d;
+}
+.kirby-games-n64 h2 {
+  background-color: #d53232;
+  border: 1px solid #848484;
+  color: #ebebeb;
+}
+.kirby-games-n64 p {
+  background-color: #e2e2e2;
+  border: 1px solid #a0a0a0;
+  color: #151515;
+  scrollbar-color: #767676 #d3d3d3;
+}
+
+/* Gamecube Games */
+.console-container-gamecube {
+  background-color: #a488f3;
+  border: 1px solid #725ab3;
+}
+.console-header-gamecube {
+  background-color: #8162d8;
+  border: 1px solid #6549b1;
+}
+.console-gamecube-image {
+  max-height: 140px;
+}
+.console-gamecube-logo {
+  width: 85%;
+}
+.kirby-games-gamecube {
+  background-color: #c2b3f1;
+  border: 1px solid #6549b1;
+}
+.kirby-games-gamecube img {
+  border: 1px solid #2d2d2d;
+}
+.kirby-games-gamecube h2 {
+  background-color: #1e1e1e;
+  border: 1px solid #5f5f5f;
+  color: #cacaca;
+}
+.kirby-games-gamecube p {
+  background-color: #dddddd;
+  border: 1px solid #5f5f5f;
+  color: #151515;
+  scrollbar-color: #767676 #d3d3d3;
+}
+
+/* DS Games */
+.console-container-ds {
+  background-color: #e7e7e8;
+  border: 1px solid #aeaeae;
+}
+.console-header-ds {
+  background-color: #f2f2f2;
+  border: 1px solid #aeaeae;
+}
+.console-ds-image {
+  max-height: 140px;
+}
+.console-ds-logo {
+  width: 85%;
+}
+.kirby-games-ds {
+  background-color: #f2f2f2;
+  border: 1px solid #aeaeae;
+}
+.kirby-games-ds img {
+  border: 1px solid #2d2d2d;
+}
+.kirby-games-ds h2 {
+  background-color: #f2f2f2;
+  border: 1px solid #aeaeae;
+  color: black;
+  text-shadow: none;
+}
+.kirby-games-ds p {
+  background-color: #f2f2f2;
+  border: 1px solid #aeaeae;
+  color: #151515;
+  scrollbar-color: #767676 #d3d3d3;
+}
+
+/* 3DS Games */
+.console-container-3ds {
+  background-color: #e7e7e8;
+  border: 1px solid #aeaeae;
+}
+.console-header-3ds {
+  background-color: #f2f2f2;
+  border: 1px solid #aeaeae;
+}
+.console-3ds-image {
+  max-height: 140px;
+}
+.console-3ds-logo {
+  width: 85%;
+}
+.kirby-games-3ds {
+  background-color: #f2f2f2;
+  border: 1px solid #aeaeae;
+}
+.kirby-games-3ds img {
+  border: 1px solid #2d2d2d;
+}
+.kirby-games-3ds h2 {
+  background-color: #dc2c2c;
+  border: 1px solid #aeaeae;
+  color: #f2f2f2;
+}
+.kirby-games-3ds p {
+  background-color: #f2f2f2;
+  border: 1px solid #aeaeae;
+  color: #151515;
+  scrollbar-color: #767676 #d3d3d3;
+}
+
+/* Wii Games */
+.console-container-wii {
+  background-color: #e7e7e8;
+  border: 1px solid #aeaeae;
+}
+.console-header-wii {
+  background-color: #f2f2f2;
+  border: 1px solid #aeaeae;
+}
+.console-wii-image {
+  max-height: 200px;
+}
+.console-wii-logo {
+  width: 70%;
+}
+.kirby-games-wii {
+  background-color: #f2f2f2;
+  border: 1px solid #aeaeae;
+}
+.kirby-games-wii img {
+  border: 1px solid #2d2d2d;
+}
+.kirby-games-wii h2 {
+  background-color: #989898;
+  border: 1px solid #757575;
+  color: #f2f2f2;
+}
+.kirby-games-wii p {
+  background-color: #f2f2f2;
+  border: 1px solid #aeaeae;
+  color: #151515;
+  scrollbar-color: #767676 #d3d3d3;
+}
+
+/* Wii U Games */
+.console-container-wii-u {
+  background-color: #e7e7e8;
+  border: 1px solid #aeaeae;
+}
+.console-header-wii-u {
+  background-color: #f2f2f2;
+  border: 1px solid #aeaeae;
+}
+.console-wii-u-image {
+  max-height: 200px;
+}
+.console-wii-u-logo {
+  width: 85%;
+}
+.kirby-games-wii-u {
+  background-color: #f2f2f2;
+  border: 1px solid #aeaeae;
+}
+.kirby-games-wii-u img {
+  border: 1px solid #2d2d2d;
+}
+.kirby-games-wii-u h2 {
+  background-color: #4bace8;
+  border: 1px solid #757575;
+  color: #f2f2f2;
+}
+.kirby-games-wii-u p {
+  background-color: #f2f2f2;
+  border: 1px solid #aeaeae;
+  color: #151515;
+  scrollbar-color: #767676 #d3d3d3;
+}
+
+/* Switch Games */
+.console-container-switch {
+  background-color: #c23131;
+  border: 1px solid #962a2a;
+}
+.console-header-switch {
+  background-color: #f1f1f1;
+  border: 1px solid #c9c7c7;
+}
+.console-switch-image {
+  max-height: 200px;
+}
+.console-switch-logo {
+  width: 85%;
+}
+.kirby-games-switch {
+  background-color: #f83b3b;
+  border: 1px solid #a92a2a;
+}
+.kirby-games-switch img {
+  border: 1px solid #2d2d2d;
+}
+.kirby-games-switch h2 {
+  background-color: #b03d3d;
+  border: 1px solid #712020;
+  color: #f2f2f2;
+}
+.kirby-games-switch p {
+  background-color: #b85151;
+  border: 1px solid #712020;
+  color: white;
+  scrollbar-color: #8e3d3d #d46060;
+}
+
+/* CSS for small devices */
+@media (max-width: 800px) {
+  .console-images {
+    max-width: 100px;
+  }
+  .kirby-games {
+    height: 200px;
+  }
+  .kirby-games img {
+    max-width: 170px;
+  }
+}
+
+/* CSS for very small devices */
+@media (max-width: 600px) {
+  .console-images {
+    display: none;
+  }
+  .kirby-games {
+    height: 190px;
+  }
+  .kirby-games img {
+    max-width: 110px;
+  }
+}
+
+/* CSS for very very small devices */
+@media (max-width: 550px) {
+  .kirby-games {
+    height: 190px;
+  }
+  .kirby-games img {
+    display: none;
+  }
+}
+
+/* CSS for Phones */
+@media (max-width: 400px) {
+  .kirby-games-greeting-div-container img {
+    display: none;
+  }
+}

@@ -1,0 +1,76 @@
+/* Containers */
+.text-containers {
+  padding: 10px;
+  margin-bottom: 12px;
+}
+
+/* Remove padding */
+.coding-tricks-introduction,
+.summary-div {
+  padding-bottom: 0;
+}
+
+/* Introduction */
+.coding-tricks-introduction img {
+  float: left;
+  margin: -5px 5px 0px -20px;
+  width: 110px;
+}
+
+/* Trick 1 : Website Structure */
+.exemple-images {
+  border: 3px solid #8699df;
+  display: block;
+  width: 97%;
+  margin: 5px auto;
+}
+.structure-explanation {
+  background: #c6cffa;
+  background: linear-gradient(148deg, #c6cffa 35%, #abb3db 100%);
+  border: 3px solid #8699df;
+  width: 95%;
+  padding: 5px;
+  margin: 10px auto;
+}
+.structure-explanation hr {
+  background: #a1aedb;
+  border: none;
+  height: 2px;
+}
+
+/* Colored links */
+.structure-header,
+.structure-nav,
+.structure-aside,
+.structure-main,
+.structure-footer {
+  text-decoration: underline;
+}
+.structure-header {
+  color: #5a5a5a;
+}
+.structure-nav {
+  color: #d81b99;
+}
+.structure-aside {
+  color: #127770;
+}
+.structure-main {
+  color: #248a24;
+}
+.structure-footer {
+  color: #c26121;
+}
+
+/* Code Snippets */
+.code-snippets {
+  background: #c6cffa;
+  background: linear-gradient(148deg, #c6cffa 35%, #abb3db 100%);
+  border: 3px solid #8699df;
+  padding: 8px;
+  font-size: 0.75em;
+}
+
+h4 {
+  margin-top: 10px;
+}

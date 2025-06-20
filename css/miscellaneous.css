@@ -1,0 +1,86 @@
+h4 {
+  margin-bottom: 10px;
+}
+
+/* Introduction */
+.miscellaneous-introduction {
+  padding: 10px 10px 0px 10px;
+  margin-bottom: 12px;
+}
+
+.miscellaneous-introduction img {
+  float: left;
+  width: 75px;
+  margin: 5px 10px -10px 0px;
+}
+
+/* My Button Container */
+.embed-div {
+  width: 85.5%;
+  padding: 10px;
+  margin: auto auto 12px auto;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+}
+.embed-div p {
+  margin-top: -5px;
+}
+.embed-site-buttons-div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: -10px;
+}
+
+/* Buttons Containers */
+.buttons-containers-container {
+  width: 85.5%;
+  padding: 10px 10px 0px 10px;
+  margin: auto auto 12px auto;
+}
+.buttons-containers {
+  width: 93%;
+  padding: 10px;
+  margin: auto auto 12px auto;
+}
+.buttons-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+.buttons-div img {
+  width: 88px;
+  height: 31px;
+}
+
+/* Stamps Container */
+.stamps-container {
+  width: 85.5%;
+  padding: 10px;
+  margin: auto auto 12px auto;
+}
+.stamps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3px;
+}
+
+/* Cool Websites Container */
+.cool-websites {
+  width: 85.5%;
+  padding: 10px;
+  margin: auto auto 12px auto;
+  padding: 10px 10px 0px 10px;
+}
+.cool-websites span {
+  margin-left: -10px;
+}
+.cool-websites ul {
+  margin-top: 10px;
+}
+.cool-websites li {
+  margin: 3px;
+}

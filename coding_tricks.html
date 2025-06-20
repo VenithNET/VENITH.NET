@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Daniele's Website - Coding Tricks</title>
+    <meta
+      name="description"
+      content="A few coding tricks, like how to add a hit counter to your Neocities page."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/coding_tricks.css" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Daniele" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <!-- Canonical tag -->
+    <link rel="canonical" href="coding_tricks.html" />
+  </head>
+
+  <body id="body">
+    <!---Site Container--->
+    <div id="websiteContainer">
+      <!-- Spacer -->
+      <div id="websiteSpacerTop"></div>
+      <!-- Header -->
+      <header id="header">
+        <img
+          src="images/header-logo.png"
+          alt="Logo and Title"
+          class="header-logo"
+        />
+      </header>
+
+      <!-- Left Aside -->
+      <aside id="leftSiteContent">
+        <!-- Main Navigation -->
+        <nav id="leftNav" aria-label="Main Navigation">
+          <div class="nav-categories">
+            <span>This Website</span>
+            <div class="nav-items">
+              <img
+                src="images/home.png"
+                class="nav-icons"
+                alt="Kirby's house"
+              /><a href="index.html" class="nav-links" id="navHome">Home</a>
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/site-info.png"
+                class="nav-icons"
+                alt="Blue Kirby"
+              /><a href="site_info.html" class="nav-links" id="navSiteInfo"
+                >Site Info</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/past-versions.png"
+                class="nav-icons"
+                alt="Star"
+              /><a
+                href="past_versions.html"
+                class="nav-links"
+                id="navPastVersions"
+                >Past Versions</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-categories">
+            <span>Personal</span>
+            <div class="nav-items">
+              <img src="images/about-me.png" class="nav-icons" alt="Kirby" /><a
+                href="about_me.html"
+                class="nav-links"
+                id="navAboutMe"
+                >About Me</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/favorite-games.png"
+                class="nav-icons"
+                alt="N64 Logo"
+              /><a
+                href="favorite_games.html"
+                class="nav-links"
+                id="navFavoriteGames"
+                >Favorite Games</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/anime-reviews.png"
+                class="nav-icons"
+                alt="Konata Izumi"
+              /><a
+                href="anime_reviews.html"
+                class="nav-links"
+                id="navAnimeReviews"
+                >Anime Reviews</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/artworks.png"
+                class="nav-icons"
+                alt="Kirby 64 Painting"
+              /><a href="artworks.html" class="nav-links" id="navArtworks"
+                >Artworks</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-categories">
+            <span>Entertainment</span>
+            <div class="nav-items">
+              <img
+                src="images/music-player.png"
+                class="nav-icons"
+                alt="Mike Kirby"
+              /><a
+                href="music_player.html"
+                class="nav-links"
+                id="navMusicPlayer"
+                >Music Player ♪</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/mini-tv.png"
+                class="nav-icons"
+                alt="Cartoonish CRT TV"
+              /><a href="crt_television.html" class="nav-links" id="navCRT"
+                >CRT Television</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/crt-television.png"
+                class="nav-icons"
+                alt="CRT TV Realistic"
+              /><a href="others/crt-tv/index.html" class="nav-links-external"
+                >Realistic CRT</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/arcade-games.png"
+                class="nav-icons"
+                alt="Pixel Mario"
+              /><a
+                href="arcade_games.html"
+                class="nav-links"
+                id="navArcadeGames"
+                >Arcade Games</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/sketchbook.png"
+                class="nav-icons"
+                alt="Adeleine from Kirby"
+              /><a href="sketchbook.html" class="nav-links" id="navSketchbook"
+                >Sketchbook</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-categories">
+            <span>Cool Stuff</span>
+            <div class="nav-items">
+              <img
+                src="images/coding-tricks.png"
+                class="nav-icons"
+                alt="HTML5 Logo"
+              /><a
+                href="coding_tricks.html"
+                class="nav-links-active"
+                id="navCodingTricks"
+                >Coding Tricks</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/all-kirby-games.png"
+                class="nav-icons"
+                alt="Retro Kirby"
+              /><a
+                href="all_kirby_games.html"
+                class="nav-links"
+                id="navAllKirbyGames"
+                >All Kirby Games</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/miscellaneous.png"
+                class="nav-icons"
+                alt="Kirby 64 Painting 2"
+              /><a
+                href="miscellaneous.html"
+                class="nav-links"
+                id="navMiscellaneous"
+                >Miscellaneous</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/gif-collection.png"
+                class="nav-icons"
+                alt="King DeDeDe"
+              /><a
+                href="gif_collection.html"
+                class="nav-links"
+                id="navGifCollection"
+                >GIF Collection</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/guestbook.png"
+                class="nav-icons"
+                alt="Open Book"
+              /><a href="guestbook.html" class="nav-links" id="navGuestbook"
+                >My Guestbook</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-categories">
+            <span>Other Pages</span>
+            <div class="nav-items">
+              <img
+                src="images/monster-hunter-tribute.png"
+                class="nav-icons"
+                alt="Felyne"
+              /><a
+                href="others/mhfu-tribute/index.html"
+                class="nav-links-external"
+                >Monster Hunter</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/minecraft-tribute.png"
+                class="nav-icons"
+                alt="Grass Block"
+              /><a
+                href="others/minecraft-tribute/index.html"
+                class="nav-links-external"
+                >Minecraft</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/wall-e-tribute.png"
+                class="nav-icons"
+                alt="BNL Logo"
+              /><a
+                href="others/wall-e-tribute/home.html"
+                class="nav-links-external"
+                >WALL-E</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/frutigeraeroarchive.png"
+                class="nav-icons"
+                alt="Windows 7 Orb"
+              /><a
+                href="https://frutigeraeroarchive.neocities.org/"
+                class="nav-links-external"
+                >Frutiger Aero</a
+              >
+            </div>
+          </div>
+
+          <!-- Nav Music Player -->
+          <audio id="navMusic">
+            <source src="#" type="audio/mpeg" />
+          </audio>
+          <!-- Music Controls -->
+          <div class="nav-music-div">
+            <div class="nav-music-marquee">
+              <span id="currentSongInfo"
+                ><!-- Current song information will go here --></span
+              >
+            </div>
+            <nav aria-label="Music Player">
+              <div>
+                <button id="navMusicPlay">Play</button>
+                <button id="navMusicPause">Pause</button>
+              </div>
+              <div aria-label="Music Player Media Controls">
+                <button id="navMusicPrevious">Back</button>
+                <button id="navMusicNext">Next</button>
+              </div>
+            </nav>
+          </div>
+        </nav>
+      </aside>
+
+      <!-- Right Aside -->
+      <aside id="rightSiteContent">
+        <div class="aside-ads-container">
+          <span>Cool Posters</span>
+          <img
+            src="images/sidebars/azumanga.jpg"
+            alt="Azumanga Daioh Poster"
+            title="Azumanga Daioh"
+          />
+          <img
+            src="images/sidebars/renge.jpg"
+            alt="Renge Miyauchi Poster"
+            title="Renge Miyauchi"
+          />
+          <img
+            src="images/sidebars/nichijou.jpg"
+            alt="Nichijou Poster"
+            title="Nichijou"
+          />
+          <img
+            src="images/sidebars/kirby_gameboy.jpg"
+            alt="Ad for Kirby Game Boy game"
+            title="Kirby Tilt 'n' Tumble"
+          />
+          <img
+            src="images/sidebars/yui_hirasawa.png"
+            alt="Yui Hirasawa"
+            class="sidebar-character-1"
+            title="Yui Hirasawa"
+          />
+        </div>
+      </aside>
+
+      <!-- Main Page -->
+      <main id="middleContent">
+        <!-- Coding Tricks Section -->
+        <section id="codingTricksSection">
+          <div
+            class="coding-tricks-introduction text-containers text-containers-main-bg"
+          >
+            <h1>Coding Tricks</h1>
+            <img src="images/gifs/merlin.gif" alt="Merlin" />
+            <p>
+              Welcome to the coding section ! In here I will share some stuff
+              I've learned while making this website and learning web
+              development, i hope you find it useful. Make sure to click the
+              links if you want to learn more on the things mentioned. Happy
+              reading.
+            </p>
+          </div>
+
+          <div class="summary-div text-containers text-containers-main-bg">
+            <h3>Summary (W.I.P, More to come)</h3>
+            <ul>
+              <li><a href="#websiteStructureDiv">Website Structure</a></li>
+              <li>
+                <a href="#visitorCounterDiv">Visitor Counter for Neocities</a>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            id="websiteStructureDiv"
+            class="website-structure-div text-containers text-containers-main-bg"
+          >
+            <h3>Trick #1: Website Structure</h3>
+            <p>
+              To do a website layout properly, it's important to separate your
+              page with the right semantic elements. This helps with SEO,
+              accessibility and is way more readable.
+            </p>
+            <img
+              src="images/website-structure.jpg"
+              alt="Website structure"
+              class="exemple-images"
+            />
+            <div class="structure-explanation">
+              <p>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header"
+                  target="_blank"
+                  class="structure-header"
+                  >Header</a
+                >
+                is where you would typically put your
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML"
+                  target="_blank"
+                  >logo image</a
+                >
+                and website name. It can also be nested into a section to
+                indicate the header part of that section.
+              </p>
+              <hr />
+              <p>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav"
+                  target="_blank"
+                  class="structure-nav"
+                  >Nav</a
+                >
+                is where you will put
+                <a
+                  href="https://www.w3schools.com/html/html_links.asp"
+                  target="_blank"
+                  >links</a
+                >
+                to navigate your website, this can be nested in the
+                <a href="https://www.programiz.com/html/aside" target="_blank"
+                  >aside</a
+                >
+                part as well.
+              </p>
+              <hr />
+              <p>
+                <a
+                  href="https://www.programiz.com/html/aside"
+                  target="_blank"
+                  class="structure-aside"
+                  >Aside</a
+                >
+                is content that will go either on the left or right part of the
+                main content, you can typically achieve this by adding
+                <a
+                  href="https://www.w3schools.com/Css/css_float.asp"
+                  target="_blank"
+                  >float</a
+                >
+                to your CSS, or using
+                <a
+                  href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+                  target="_blank"
+                  >flexbox</a
+                >.
+              </p>
+              <hr />
+              <p>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main"
+                  target="_blank"
+                  class="structure-main"
+                  >Main</a
+                >
+                is where your main content goes, like the middle of the page,
+                you can nest
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section"
+                  target="_blank"
+                  >sections</a
+                >
+                inside the
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main"
+                  target="_blank"
+                  >main</a
+                >, optionally add
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article"
+                  target="_blank"
+                  >articles</a
+                >
+                inside the sections to separate your content into chunks.
+              </p>
+              <hr />
+              <p>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer"
+                  target="_blank"
+                  class="structure-footer"
+                  >Footer</a
+                >
+                is typically at the bottom of the page, and is where you would
+                put
+                <a
+                  href="https://www.w3schools.com/tags/att_a_target.asp"
+                  target="_blank"
+                  >outgoing links</a
+                >
+                like social media, and for copyright information.
+              </p>
+            </div>
+
+            <p>
+              For accessibility, consider adding
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA"
+                target="_blank"
+                >aria</a
+              >
+              tags to help people with screen-readers.
+            </p>
+
+            <p>Here's a few other useful links:</p>
+            <ul>
+              <li>
+                <a
+                  href="https://developer.mozilla.org/en-US/curriculum/core/semantic-html/"
+                  target="_blank"
+                  >Semantic HTML | MDN</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Accessibility/HTML"
+                  target="_blank"
+                  >HTML: A good basis for accessibility | MDN</a
+                >
+              </li>
+
+              <li>
+                <a href="https://www.seobility.net/en/seocheck/" target="_blank"
+                  >SEO Checker (check your SEO rating)</a
+                >
+              </li>
+
+              <li>
+                <a href="https://www.xml-sitemaps.com/" target="_blank"
+                  >XML Sitemap generator (make a sitemap for SEO)</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="https://ahrefs.com/backlink-checker/?input=https%3A%2F%2Ffrutigeraeroarchive.org%2F&amp;mode=subdomains"
+                  target="_blank"
+                  >Backlinks checker (see who linked to you)</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div
+            id="visitorCounterDiv"
+            class="text-containers text-containers-main-bg"
+          >
+            <h3>Trick #2: Visitor Counter (Neocities)</h3>
+            <p>
+              View counters let you display how many people have visited your
+              page, on Neocities, you can use the API to fetch that data and
+              JavaScript to display it.
+            </p>
+            <p>
+              You can see how to do this in depth by clicking
+              <a href="https://dannarchy.com/tut/tut_002" target="_blank"
+                >this link</a
+              >, i will show you how i do it down below.
+            </p>
+
+            <h4>Step 1: HTML</h4>
+            <p>
+              First step, make 2 span, one for your message, the other for the
+              number, give an ID to the one that will receive your visitor
+              number.
+            </p>
+
+            <pre
+              class="code-snippets"
+            ><code>&lt;span&gt;You are visitor number:&lt;/span&gt;
+&lt;span id="visitorCounter">&lt;/span&gt;</code></pre>
+
+            <h4>Step 2: Javascript</h4>
+            <p>
+              <a
+                href="https://www.w3schools.com/TAGS/att_script_src.asp"
+                target="_blank"
+                >Link your Javascript file</a
+              >
+              at the bottom of your code, right above the closing body tag, or
+              type inside of the &lt;script&gt; &lt;/script &gt; tag.
+            </p>
+
+            <pre class="code-snippets"><code>&lt;script&gt;
+  const VISITOR_COUNTER = document.getElementById("visitorCounter");
+
+  let xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      // Get the data
+      let site_data = JSON.parse(this.responseText);
+      // Add commas
+      let num_arr = site_data.info.views.toString().split("");
+      let num_str = "";
+      for (i = 0; i &lt; num_arr.length; i++) {
+        num_str += num_arr[i];
+        if ((num_arr.length - 1 - i) % 3 == 0 && num_arr.length - 1 - i != 0) {
+          num_str += ",";
+        }
+      }
+      // Add result to html
+      VISITOR_COUNTER.innerHTML = num_str;
+    }
+  };
+  xhttp.open(
+    "GET",
+    "https://weirdscifi.ratiosemper.com/neocities.php?sitename=YOUR_SITENAME",
+    true
+  );
+  xhttp.send();
+&lt;/script&gt;</code></pre>
+            <p>
+              At the end of the script, you just need to replace the
+              "YOUR_SITENAME" part by your Neocities username. This should be
+              the result:
+            </p>
+            <span>You are visitor number:</span>
+            <span id="visitorCounter"></span>
+          </div>
+        </section>
+      </main>
+
+      <footer id="bottomFooter">
+        <span>2022-2025 &copy;Daniele63</span><br />
+        <a href="mailto:daniele63web@hotmail.com">e-mail</a>
+        <a href="https://ko-fi.com/daniele63">ko-fi</a>
+        <a href="https://spacehey.com/daniele63">spacehey</a>
+        <a href="https://www.bitview.net/user/Daniele">bitview</a>
+        <a href="https://neocities.org/site/daniele63">neocities</a>
+      </footer>
+      <!-- Spacer -->
+      <div id="websiteSpacerBottom"></div>
+    </div>
+    <!-- Javascript -->
+    <script src="javascript/nav-music.js"></script>
+  </body>
+</html>

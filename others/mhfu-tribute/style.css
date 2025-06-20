@@ -1,0 +1,47 @@
+body {
+  background: url("images/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#header {
+  text-align: center;
+}
+
+#header img {
+  width: 400px;
+  margin-top: 50px;
+}
+
+#video-section {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#video-section img {
+  position: absolute;
+  width: 720px;
+}
+
+#video-section video {
+  height: 228px;
+  margin-top: -26px;
+  z-index: 1;
+}
+
+#footer {
+  position: absolute;
+  top: 4px;
+  padding: 10px;
+}
+
+#footer a {
+  background-color: rgb(173, 110, 28);
+  color: #ffffff;
+  padding: 5px;
+  text-decoration: none;
+}

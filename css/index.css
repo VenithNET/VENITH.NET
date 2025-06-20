@@ -1,0 +1,94 @@
+/* Banner */
+.home-banner {
+  margin-top: 12px;
+}
+.home-banner img {
+  border: 1px solid #b14848;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.253);
+  width: 99.4%;
+}
+
+/* Introduction Container */
+.home-text {
+  margin: 12px 0px 0px 0px;
+  padding: 0px 10px 0px 10px;
+}
+/* Images */
+.home-img-1 {
+  margin-top: 3px;
+  float: left;
+}
+
+/* Updates Container */
+.recent-updates {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 210px;
+  padding: 10px;
+  margin-top: 12px;
+  font-size: 1em;
+}
+.recent-updates div {
+  overflow: auto;
+}
+.recent-updates p {
+  border-bottom: 3px solid #df8686;
+  margin: 0px;
+  padding: 5px 7px;
+}
+.recent-updates strong {
+  color: #001aad;
+  margin-right: 5px;
+}
+.recent-updates strong:after {
+  content: " -";
+}
+
+/* Buttons Carousel */
+.carousel-buttons {
+  width: 99.5%;
+  padding: 5px 0px;
+  margin-top: 12px;
+  overflow: hidden;
+}
+.carousel-buttons div {
+  animation: carousel 35s linear infinite;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 5px;
+  width: calc(14 * 96px);
+}
+.carousel-buttons img {
+  flex-shrink: 0;
+  height: 32px;
+}
+/* Carousel animation */
+@keyframes carousel {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(calc(14 * -96px), 0, 0);
+  }
+}
+
+/* View Counter Container */
+.view-counter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 99.5%;
+  margin-top: 12px;
+  gap: 3px;
+}
+
+/* CSS for Phones */
+@media (max-width: 400px) {
+  .home-img-1 {
+    display: none;
+  }
+}

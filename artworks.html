@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Daniele's Website - Artworks</title>
+    <meta
+      name="description"
+      content="The artworks made by the creator of this website."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/artworks.css" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Daniele" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <!-- Canonical tag -->
+    <link rel="canonical" href="artworks.html" />
+  </head>
+
+  <body id="body">
+    <!---Site Container--->
+    <div id="websiteContainer">
+      <!-- Spacer -->
+      <div id="websiteSpacerTop"></div>
+      <!-- Header -->
+      <header id="header">
+        <img
+          src="images/header-logo.png"
+          alt="Logo and Title"
+          class="header-logo"
+        />
+      </header>
+
+      <!-- Left Aside -->
+      <aside id="leftSiteContent">
+        <!-- Main Navigation -->
+        <nav id="leftNav" aria-label="Main Navigation">
+          <div class="nav-categories">
+            <span>This Website</span>
+            <div class="nav-items">
+              <img
+                src="images/home.png"
+                class="nav-icons"
+                alt="Kirby's house"
+              /><a href="index.html" class="nav-links" id="navHome">Home</a>
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/site-info.png"
+                class="nav-icons"
+                alt="Blue Kirby"
+              /><a href="site_info.html" class="nav-links" id="navSiteInfo"
+                >Site Info</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/past-versions.png"
+                class="nav-icons"
+                alt="Star"
+              /><a
+                href="past_versions.html"
+                class="nav-links"
+                id="navPastVersions"
+                >Past Versions</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-categories">
+            <span>Personal</span>
+            <div class="nav-items">
+              <img src="images/about-me.png" class="nav-icons" alt="Kirby" /><a
+                href="about_me.html"
+                class="nav-links"
+                id="navAboutMe"
+                >About Me</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/favorite-games.png"
+                class="nav-icons"
+                alt="N64 Logo"
+              /><a
+                href="favorite_games.html"
+                class="nav-links"
+                id="navFavoriteGames"
+                >Favorite Games</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/anime-reviews.png"
+                class="nav-icons"
+                alt="Konata Izumi"
+              /><a
+                href="anime_reviews.html"
+                class="nav-links"
+                id="navAnimeReviews"
+                >Anime Reviews</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/artworks.png"
+                class="nav-icons"
+                alt="Kirby 64 Painting"
+              /><a
+                href="artworks.html"
+                class="nav-links-active"
+                id="navArtworks"
+                >Artworks</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-categories">
+            <span>Entertainment</span>
+            <div class="nav-items">
+              <img
+                src="images/music-player.png"
+                class="nav-icons"
+                alt="Mike Kirby"
+              /><a
+                href="music_player.html"
+                class="nav-links"
+                id="navMusicPlayer"
+                >Music Player ♪</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/mini-tv.png"
+                class="nav-icons"
+                alt="Cartoonish CRT TV"
+              /><a href="crt_television.html" class="nav-links" id="navCRT"
+                >CRT Television</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/crt-television.png"
+                class="nav-icons"
+                alt="CRT TV Realistic"
+              /><a href="others/crt-tv/index.html" class="nav-links-external"
+                >Realistic CRT</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/arcade-games.png"
+                class="nav-icons"
+                alt="Pixel Mario"
+              /><a
+                href="arcade_games.html"
+                class="nav-links"
+                id="navArcadeGames"
+                >Arcade Games</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/sketchbook.png"
+                class="nav-icons"
+                alt="Adeleine from Kirby"
+              /><a href="sketchbook.html" class="nav-links" id="navSketchbook"
+                >Sketchbook</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-categories">
+            <span>Cool Stuff</span>
+            <div class="nav-items">
+              <img
+                src="images/coding-tricks.png"
+                class="nav-icons"
+                alt="HTML5 Logo"
+              /><a
+                href="coding_tricks.html"
+                class="nav-links"
+                id="navCodingTricks"
+                >Coding Tricks</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/all-kirby-games.png"
+                class="nav-icons"
+                alt="Retro Kirby"
+              /><a
+                href="all_kirby_games.html"
+                class="nav-links"
+                id="navAllKirbyGames"
+                >All Kirby Games</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/miscellaneous.png"
+                class="nav-icons"
+                alt="Kirby 64 Painting 2"
+              /><a
+                href="miscellaneous.html"
+                class="nav-links"
+                id="navMiscellaneous"
+                >Miscellaneous</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/gif-collection.png"
+                class="nav-icons"
+                alt="King DeDeDe"
+              /><a
+                href="gif_collection.html"
+                class="nav-links"
+                id="navGifCollection"
+                >GIF Collection</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/guestbook.png"
+                class="nav-icons"
+                alt="Open Book"
+              /><a href="guestbook.html" class="nav-links" id="navGuestbook"
+                >My Guestbook</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-categories">
+            <span>Other Pages</span>
+            <div class="nav-items">
+              <img
+                src="images/monster-hunter-tribute.png"
+                class="nav-icons"
+                alt="Felyne"
+              /><a
+                href="others/mhfu-tribute/index.html"
+                class="nav-links-external"
+                >Monster Hunter</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/minecraft-tribute.png"
+                class="nav-icons"
+                alt="Grass Block"
+              /><a
+                href="others/minecraft-tribute/index.html"
+                class="nav-links-external"
+                >Minecraft</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/wall-e-tribute.png"
+                class="nav-icons"
+                alt="BNL Logo"
+              /><a
+                href="others/wall-e-tribute/home.html"
+                class="nav-links-external"
+                >WALL-E</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/frutigeraeroarchive.png"
+                class="nav-icons"
+                alt="Windows 7 Orb"
+              /><a
+                href="https://frutigeraeroarchive.neocities.org/"
+                class="nav-links-external"
+                >Frutiger Aero</a
+              >
+            </div>
+          </div>
+
+          <!-- Nav Music Player -->
+          <audio id="navMusic">
+            <source src="#" type="audio/mpeg" />
+          </audio>
+          <!-- Music Controls -->
+          <div class="nav-music-div">
+            <div class="nav-music-marquee">
+              <span id="currentSongInfo"
+                ><!-- Current song information will go here --></span
+              >
+            </div>
+            <nav aria-label="Music Player">
+              <div>
+                <button id="navMusicPlay">Play</button>
+                <button id="navMusicPause">Pause</button>
+              </div>
+              <div aria-label="Music Player Media Controls">
+                <button id="navMusicPrevious">Back</button>
+                <button id="navMusicNext">Next</button>
+              </div>
+            </nav>
+          </div>
+        </nav>
+      </aside>
+
+      <!-- Right Aside -->
+      <aside id="rightSiteContent">
+        <div class="aside-ads-container">
+          <span>Cool Posters</span>
+          <img
+            src="images/sidebars/azumanga.jpg"
+            alt="Azumanga Daioh Poster"
+            title="Azumanga Daioh"
+          />
+          <img
+            src="images/sidebars/renge.jpg"
+            alt="Renge Miyauchi Poster"
+            title="Renge Miyauchi"
+          />
+          <img
+            src="images/sidebars/nichijou.jpg"
+            alt="Nichijou Poster"
+            title="Nichijou"
+          />
+          <img
+            src="images/sidebars/kirby_gameboy.jpg"
+            alt="Ad for Kirby Game Boy game"
+            title="Kirby Tilt 'n' Tumble"
+          />
+          <img
+            src="images/sidebars/yui_hirasawa.png"
+            alt="Yui Hirasawa"
+            class="sidebar-character-1"
+            title="Yui Hirasawa"
+          />
+        </div>
+      </aside>
+
+      <!-- Main Page -->
+      <main id="middleContent">
+        <!-- Artworks Section -->
+        <section id="artworksSection">
+          <!-- Introduction -->
+          <div class="artworks-introduction-div text-containers-main-bg">
+            <h1>My Artworks</h1>
+            <img src="images/adeleine-1.png" />
+            <p>
+              I enjoyed drawing since I was a child, I sometimes stopped, for
+              long periods of time, but I always come back to it once in a
+              while. My favorite way to draw is using regular graphite pencils,
+              but sometimes I mess with digital drawing. Here are some of my
+              recent drawings down below.
+            </p>
+          </div>
+
+          <!-- Categories -->
+          <div class="categories-div text-containers-main-bg">
+            <h3>Categories:</h3>
+            <div class="categories-container-div">
+              <div class="categories-links">
+                <a href="#others"
+                  ><img
+                    src="images/miscellaneous-logo.png"
+                  />Miscellaneous</a
+                >
+
+                <a href="#yotsuba"
+                  ><img src="images/yotsuba-logo.png" />Yotsuba&!</a
+                >
+
+                <a href="#azumanga"
+                  ><img src="images/azumanga-daioh-logo.png" />Azumanga
+                  Daioh</a
+                >
+
+                <a href="#vocaloid"
+                  ><img src="images/vocaloid-logo.png" />Vocaloid</a
+                >
+
+                <a href="#kirby"><img src="images/kirby-logo.png" />Kirby</a>
+
+                <a href="#pokemon"
+                  ><img src="images/pokemon-logo.png" />Pokémon</a
+                >
+              </div>
+
+              <img
+                src="images/adeleine-2.png"
+                class="categories-right-image"
+              />
+            </div>
+          </div>
+
+          <!-- Miscellaneous -->
+          <div class="artworks-divs text-containers-main-bg">
+            <h3 id="others">
+              <img
+                src="images/miscellaneous-logo.png"
+                class="artwork-title-logos"
+              />
+              Miscellaneous
+            </h3>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/miscellaneous/Azusa%20Nakano.jpg"
+                alt="Azusa Nakano"
+                class="artworks"
+              />
+              <h4>Azusa Nakano - 17 May 2025</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/miscellaneous/Mio%20Akiyama.jpg"
+                alt="Mio Akiyama"
+                class="artworks"
+              />
+              <h4>Mio Akiyama - 9 May 2025</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/miscellaneous/Yui%20Hirasawa.jpg"
+                alt="Yui Hirasawa"
+                class="artworks"
+              />
+              <h4>Yui Hirasawa - 5 May 2025</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/miscellaneous/Robin.jpg"
+                alt="European Robin"
+                class="artworks"
+              />
+              <h4>European Robin - 9 December 2024</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/miscellaneous/Felix%20the%20Cat.jpg"
+                alt="Felix the Cat"
+                class="artworks"
+              />
+              <h4>Felix the Cat - 12 November 2024</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/miscellaneous/Asterix.jpg"
+                alt="Asterix"
+                class="artworks"
+              />
+              <h4>Asterix the Gaul - 11 November 2024</h4>
+            </div>
+          </div>
+
+          <!-- Yotsuba&! -->
+          <div class="artworks-divs text-containers-main-bg">
+            <h3 id="yotsuba">
+              <img
+                src="images/yotsuba-logo.png"
+                class="artwork-title-logos"
+              />
+              Yotsuba&!
+            </h3>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/yotsuba/Yotsuba%209.jpg"
+                alt="Yotsuba 9"
+                class="artworks"
+              />
+              <h4>Yotsuba & Sunflowers - 29 December 2024</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/yotsuba/Yotsuba%208.jpg"
+                alt="Yotsuba 8"
+                class="artworks"
+              />
+              <h4>Yousuke Koiwai - 10 December 2024</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/yotsuba/Yotsuba%207.jpg"
+                alt="Yotsuba 7"
+                class="artworks"
+              />
+              <h4>Scared Yotsuba - 10 December 2024</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/yotsuba/Yotsuba%206.jpg"
+                alt="Yotsuba 6"
+                class="artworks"
+              />
+              <h4>Yotsuba at the farm - 2 November 2024</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/yotsuba/Yotsuba%205.jpg"
+                alt="Yotsuba 5"
+                class="artworks"
+              />
+              <h4>Yotsuba goes to school - 31 October 2024</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/yotsuba/Yotsuba%204.jpg"
+                alt="Yotsuba 4"
+                class="artworks"
+              />
+              <h4>Yotsuba Paint - 27 October 2024</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/yotsuba/Yotsuba%203.jpg"
+                alt="Yotsuba 3"
+                class="artworks"
+              />
+              <h4>Yotsuba Walking - 10 October 2024</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/yotsuba/Yotsuba%202.jpg"
+                alt="Yotsuba 2"
+                class="artworks"
+              />
+              <h4>Yotsuba Smile - 8 October 2024</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/yotsuba/Yotsuba%201.jpg"
+                alt="Yotsuba 1"
+                class="artworks"
+              />
+              <h4>Yotsuba Clover - 5 October 2024</h4>
+            </div>
+          </div>
+
+          <!-- Azumanga Daioh -->
+          <div class="artworks-divs text-containers-main-bg">
+            <h3 id="azumanga">
+              <img
+                src="images/azumanga-daioh-logo.png"
+                class="artwork-title-logos"
+              />
+              Azumanga Daioh
+            </h3>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/azumanga_daioh/Chiyo%20Mihama%203.jpg"
+                alt="Chiyo Mihama 3"
+                class="artworks"
+              />
+              <h4>Chiyo Mihama - 16 December 2024</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/azumanga_daioh/Tomo%20Takino%201.jpg"
+                alt="Tomo Takino 1"
+                class="artworks"
+              />
+              <h4>Tomo Takino - 4 December 2024</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/azumanga_daioh/Chiyo%20Mihama%202.jpg"
+                alt="Chiyo Mihama 2"
+                class="artworks"
+              />
+              <h4>Chiyo Old Design - 30 October 2024</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/azumanga_daioh/Chiyo%20Mihama%201.jpg"
+                alt="Chiyo Mihama 1"
+                class="artworks"
+              />
+              <h4>Chiyo Mihama - 15 October 2024</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/azumanga_daioh/Ayumu%20Kasuga%201.jpg"
+                alt="Ayumu Kasuga 1"
+                class="artworks"
+              />
+              <h4>Ayumu Kasuga - 9 October 2024</h4>
+            </div>
+          </div>
+
+          <!-- Vocaloids -->
+          <div class="artworks-divs text-containers-main-bg">
+            <h3 id="vocaloid">
+              <img
+                src="images/vocaloid-logo.png"
+                class="artwork-title-logos"
+              />
+              Vocaloids
+            </h3>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/vocaloids/Kasane%20Teto%202.jpg"
+                alt="Kasane Teto 2"
+                class="artworks"
+              />
+              <h4>Kasane Teto - 2 December 2024</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/vocaloids/Akita%20Neru%201.jpg"
+                alt="Akita Neru 1"
+                class="artworks"
+              />
+              <h4>Akita Neru - 2 December 2024</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/vocaloids/Hatsune%20Miku%201.jpg"
+                alt="Hatsune Miku 1"
+                class="artworks"
+              />
+              <h4>Hatsune Miku - 30 November 2024</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/vocaloids/Kasane%20Teto%201.jpg"
+                alt="Kasane Teto 1"
+                class="artworks"
+              />
+              <h4>Kasane Teto - 28 November 2024</h4>
+            </div>
+          </div>
+
+          <!-- Kirby -->
+          <div class="artworks-divs text-containers-main-bg">
+            <h3 id="kirby">
+              <img
+                src="images/kirby-logo.png"
+                class="artwork-title-logos"
+              />Kirby
+            </h3>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/kirby/Kirby%201.jpg"
+                alt="Kirby 1"
+                class="artworks"
+              />
+              <h4>Sword Kirby - 29 April 2024</h4>
+            </div>
+          </div>
+
+          <!-- Pokémon -->
+          <div class="artworks-divs text-containers-main-bg">
+            <h3 id="pokemon">
+              <img
+                src="images/pokemon-logo.png"
+                class="artwork-title-logos"
+              />Pokémon
+            </h3>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/pokemon/Emolga.jpg"
+                alt="Emolga"
+                class="artworks"
+              />
+              <h4>Emolga - 29 October 2024</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/pokemon/Celebi%20and%20Pikachu.jpg"
+                alt="Celebi and Pikachu"
+                class="artworks"
+              />
+              <h4>Celebi and Pikachu - 13 October 2024</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/pokemon/Celebi.jpg"
+                alt="Celebi"
+                class="artworks"
+              />
+              <h4>Celebi - 13 October 2024</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/pokemon/Victini%201.jpg"
+                alt="Victini 1"
+                class="artworks"
+              />
+              <h4>Victini in Nature - 13 October 2024</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/pokemon/Snivy.jpg"
+                alt="Snivy"
+                class="artworks"
+              />
+              <h4>Snivy - 1 May 2024</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/pokemon/Victini%203.jpg"
+                alt="Victini 3"
+                class="artworks"
+              />
+              <h4>Victini in colour - 6 May 2024</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/pokemon/Victini%202.jpg"
+                alt="Victini 2"
+                class="artworks"
+              />
+              <h4>Victini Digital - 3 May 2024</h4>
+            </div>
+
+            <div class="text-containers-secondary-bg">
+              <img
+                src="images/artworks/pokemon/Ash%20Ketchum.jpg"
+                alt="Ash Ketchum"
+                class="artworks"
+              />
+              <h4>Ash Ketchum - 27 April 2024</h4>
+            </div>
+          </div>
+
+          <div class="deviantart-div">
+            <a href="https://www.deviantart.com/daniele630">My DeviantArt</a>
+          </div>
+        </section>
+      </main>
+
+      <footer id="bottomFooter">
+        <span>2022-2025 &copy;Daniele63</span><br />
+        <a href="mailto:daniele63web@hotmail.com">e-mail</a>
+        <a href="https://ko-fi.com/daniele63">ko-fi</a>
+        <a href="https://spacehey.com/daniele63">spacehey</a>
+        <a href="https://www.bitview.net/user/Daniele">bitview</a>
+        <a href="https://neocities.org/site/daniele63">neocities</a>
+      </footer>
+      <!-- Spacer -->
+      <div id="websiteSpacerBottom"></div>
+    </div>
+    <!-- Javascript -->
+    <script src="javascript/nav-music.js"></script>
+  </body>
+</html>

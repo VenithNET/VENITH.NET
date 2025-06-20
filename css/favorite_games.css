@@ -1,0 +1,561 @@
+/* Introduction Container */
+.fav-games-greetings-container {
+  padding: 10px 10px 0px 10px;
+  margin-bottom: 12px;
+}
+.fav-games-greetings-container img {
+  width: 90px;
+  margin: -4px 10px 0px 0px;
+  float: left;
+}
+
+/* Game Cards */
+.fav-game-card {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.253);
+  margin-bottom: 12px;
+  height: 194px;
+  display: flex;
+}
+.fav-game-card img {
+  border: 1px solid #4c5fa1;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.253);
+  width: 170px;
+  height: 170px;
+  margin: 10px;
+}
+.fav-game-card div {
+  padding: 11px;
+  border-left: 1px solid #4c5fa1;
+}
+.fav-game-card h2 {
+  font-size: 1em;
+}
+.fav-game-card p {
+  max-height: 50%;
+  overflow: auto;
+}
+.fav-game-card audio {
+  width: 100%;
+  height: 30px;
+  margin: 5px 0px;
+}
+/* PSP */
+.games-psp-title {
+  background-color: #2c4ecb;
+  background-image: linear-gradient(
+      30deg,
+      #204dec 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #204dec 87.5%,
+      #204dec
+    ),
+    linear-gradient(
+      150deg,
+      #204dec 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #204dec 87.5%,
+      #204dec
+    ),
+    linear-gradient(
+      30deg,
+      #204dec 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #204dec 87.5%,
+      #204dec
+    ),
+    linear-gradient(
+      150deg,
+      #204dec 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #204dec 87.5%,
+      #204dec
+    ),
+    linear-gradient(
+      60deg,
+      #2241b4 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #2241b4 75%,
+      #2241b4
+    ),
+    linear-gradient(
+      60deg,
+      #2241b4 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #2241b4 75%,
+      #2241b4
+    );
+}
+.games-psp {
+  color: #849aff;
+}
+/* PS3 */
+.games-ps3-title {
+  background-color: #2268c9;
+  background-image: linear-gradient(
+      30deg,
+      #146eec 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #146eec 87.5%,
+      #146eec
+    ),
+    linear-gradient(
+      150deg,
+      #146eec 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #146eec 87.5%,
+      #146eec
+    ),
+    linear-gradient(
+      30deg,
+      #146eec 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #146eec 87.5%,
+      #146eec
+    ),
+    linear-gradient(
+      150deg,
+      #146eec 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #146eec 87.5%,
+      #146eec
+    ),
+    linear-gradient(
+      60deg,
+      #1e58a9 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #1e58a9 75%,
+      #1e58a9
+    ),
+    linear-gradient(
+      60deg,
+      #1e58a9 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #1e58a9 75%,
+      #1e58a9
+    );
+}
+.games-ps3 {
+  color: #b4d3ff;
+}
+/* Switch */
+.games-switch-title {
+  background-color: #c23d3d;
+  background-image: linear-gradient(
+      30deg,
+      #c92222 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #c92222 87.5%,
+      #c92222
+    ),
+    linear-gradient(
+      150deg,
+      #c92222 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #c92222 87.5%,
+      #c92222
+    ),
+    linear-gradient(
+      30deg,
+      #c92222 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #c92222 87.5%,
+      #c92222
+    ),
+    linear-gradient(
+      150deg,
+      #c92222 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #c92222 87.5%,
+      #c92222
+    ),
+    linear-gradient(
+      60deg,
+      #992b2b 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #992b2b 75%,
+      #992b2b
+    ),
+    linear-gradient(
+      60deg,
+      #992b2b 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #992b2b 75%,
+      #992b2b
+    );
+}
+.games-switch {
+  color: #ffafaf;
+}
+/* Wii */
+.games-wii-title {
+  background-color: #a2a2a2;
+  background-image: linear-gradient(
+      30deg,
+      #bdbdbd 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #bdbdbd 87.5%,
+      #bdbdbd
+    ),
+    linear-gradient(
+      150deg,
+      #bdbdbd 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #bdbdbd 87.5%,
+      #bdbdbd
+    ),
+    linear-gradient(
+      30deg,
+      #bdbdbd 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #bdbdbd 87.5%,
+      #bdbdbd
+    ),
+    linear-gradient(
+      150deg,
+      #bdbdbd 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #bdbdbd 87.5%,
+      #bdbdbd
+    ),
+    linear-gradient(
+      60deg,
+      #898989 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #898989 75%,
+      #898989
+    ),
+    linear-gradient(
+      60deg,
+      #898989 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #898989 75%,
+      #898989
+    );
+}
+.games-wii {
+  color: #d0f0ff;
+}
+/* PC */
+.games-pc-title {
+  background-color: #498044;
+  background-image: linear-gradient(
+      30deg,
+      #397933 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #397933 87.5%,
+      #397933
+    ),
+    linear-gradient(
+      150deg,
+      #397933 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #397933 87.5%,
+      #397933
+    ),
+    linear-gradient(
+      30deg,
+      #397933 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #397933 87.5%,
+      #397933
+    ),
+    linear-gradient(
+      150deg,
+      #397933 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #397933 87.5%,
+      #397933
+    ),
+    linear-gradient(
+      60deg,
+      #375f33 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #375f33 75%,
+      #375f33
+    ),
+    linear-gradient(
+      60deg,
+      #375f33 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #375f33 75%,
+      #375f33
+    );
+}
+.games-pc {
+  color: #63c15a;
+}
+/* Gamecube */
+.games-gamecube-title {
+  background-color: #5739c4;
+  background-image: linear-gradient(
+      30deg,
+      #5739c4 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #5739c4 87.5%,
+      #5739c4
+    ),
+    linear-gradient(
+      150deg,
+      #5739c4 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #5739c4 87.5%,
+      #5739c4
+    ),
+    linear-gradient(
+      30deg,
+      #5739c4 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #5739c4 87.5%,
+      #5739c4
+    ),
+    linear-gradient(
+      150deg,
+      #5739c4 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #5739c4 87.5%,
+      #5739c4
+    ),
+    linear-gradient(
+      60deg,
+      #463585 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #463585 75%,
+      #463585
+    ),
+    linear-gradient(
+      60deg,
+      #463585 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #463585 75%,
+      #463585
+    );
+}
+.games-gamecube {
+  color: #ae97ff;
+}
+/* PS2 */
+.games-ps2-title {
+  background-color: #3e63be;
+  background-image: linear-gradient(
+      30deg,
+      #2865ff 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #2865ff 87.5%,
+      #2865ff
+    ),
+    linear-gradient(
+      150deg,
+      #2865ff 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #2865ff 87.5%,
+      #2865ff
+    ),
+    linear-gradient(
+      30deg,
+      #2865ff 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #2865ff 87.5%,
+      #2865ff
+    ),
+    linear-gradient(
+      150deg,
+      #2865ff 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #2865ff 87.5%,
+      #2865ff
+    ),
+    linear-gradient(
+      60deg,
+      #3960c5 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #3960c5 75%,
+      #3960c5
+    ),
+    linear-gradient(
+      60deg,
+      #3960c5 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #3960c5 75%,
+      #3960c5
+    );
+}
+.games-ps2 {
+  color: #779dff;
+}
+/* GBA */
+.games-gba-title {
+  background-color: #4e52c6;
+  background-image: linear-gradient(
+      30deg,
+      #393ed0 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #393ed0 87.5%,
+      #393ed0
+    ),
+    linear-gradient(
+      150deg,
+      #393ed0 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #393ed0 87.5%,
+      #393ed0
+    ),
+    linear-gradient(
+      30deg,
+      #393ed0 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #393ed0 87.5%,
+      #393ed0
+    ),
+    linear-gradient(
+      150deg,
+      #393ed0 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #393ed0 87.5%,
+      #393ed0
+    ),
+    linear-gradient(
+      60deg,
+      #4145a7 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #4145a7 75%,
+      #4145a7
+    ),
+    linear-gradient(
+      60deg,
+      #4145a7 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #4145a7 75%,
+      #4145a7
+    );
+}
+.games-gba {
+  color: #8f93ff;
+}
+/* DS */
+.games-ds-title {
+  background-color: #7fb2c0;
+  background-image: linear-gradient(
+      30deg,
+      #a7d1de 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #a7d1de 87.5%,
+      #a7d1de
+    ),
+    linear-gradient(
+      150deg,
+      #a7d1de 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #a7d1de 87.5%,
+      #a7d1de
+    ),
+    linear-gradient(
+      30deg,
+      #a7d1de 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #a7d1de 87.5%,
+      #a7d1de
+    ),
+    linear-gradient(
+      150deg,
+      #a7d1de 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #a7d1de 87.5%,
+      #a7d1de
+    ),
+    linear-gradient(
+      60deg,
+      #8bb3c0 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #8bb3c0 75%,
+      #8bb3c0
+    ),
+    linear-gradient(
+      60deg,
+      #8bb3c0 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #8bb3c0 75%,
+      #8bb3c0
+    );
+}
+.games-ds {
+  color: #aeecff;
+}
+
+/* CSS for small devices */
+@media (max-width: 780px) {
+  .fav-game-card div {
+    overflow: auto;
+  }
+  .fav-game-card p {
+    overflow: visible;
+  }
+}
+/* CSS for very small devices */
+@media (max-width: 550px) {
+  .fav-games-greetings-container img {
+    display: none;
+  }
+  .fav-games-greetings img {
+    display: none;
+  }
+  .fav-game-card div {
+    border-left: none;
+  }
+  .fav-game-card img {
+    display: none;
+  }
+}

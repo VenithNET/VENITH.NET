@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Daniele's Website - CRT Television</title>
+    <meta
+      name="description"
+      content="A functional little CRT television powered by Javascript."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/crt_television.css" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Daniele" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <!-- Canonical tag -->
+    <link rel="canonical" href="crt_television.html" />
+  </head>
+
+  <body id="body">
+    <!---Site Container--->
+    <div id="websiteContainer">
+      <!-- Spacer -->
+      <div id="websiteSpacerTop"></div>
+      <!-- Header -->
+      <header id="header">
+        <img
+          src="images/header-logo.png"
+          alt="Logo and Title"
+          class="header-logo"
+        />
+      </header>
+
+      <!-- Left Aside -->
+      <aside id="leftSiteContent">
+        <!-- Main Navigation -->
+        <nav id="leftNav" aria-label="Main Navigation">
+          <div class="nav-categories">
+            <span>This Website</span>
+            <div class="nav-items">
+              <img
+                src="images/home.png"
+                class="nav-icons"
+                alt="Kirby's house"
+              /><a href="index.html" class="nav-links" id="navHome">Home</a>
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/site-info.png"
+                class="nav-icons"
+                alt="Blue Kirby"
+              /><a href="site_info.html" class="nav-links" id="navSiteInfo"
+                >Site Info</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/past-versions.png"
+                class="nav-icons"
+                alt="Star"
+              /><a
+                href="past_versions.html"
+                class="nav-links"
+                id="navPastVersions"
+                >Past Versions</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-categories">
+            <span>Personal</span>
+            <div class="nav-items">
+              <img src="images/about-me.png" class="nav-icons" alt="Kirby" /><a
+                href="about_me.html"
+                class="nav-links"
+                id="navAboutMe"
+                >About Me</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/favorite-games.png"
+                class="nav-icons"
+                alt="N64 Logo"
+              /><a
+                href="favorite_games.html"
+                class="nav-links"
+                id="navFavoriteGames"
+                >Favorite Games</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/anime-reviews.png"
+                class="nav-icons"
+                alt="Konata Izumi"
+              /><a
+                href="anime_reviews.html"
+                class="nav-links"
+                id="navAnimeReviews"
+                >Anime Reviews</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/artworks.png"
+                class="nav-icons"
+                alt="Kirby 64 Painting"
+              /><a href="artworks.html" class="nav-links" id="navArtworks"
+                >Artworks</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-categories">
+            <span>Entertainment</span>
+            <div class="nav-items">
+              <img
+                src="images/music-player.png"
+                class="nav-icons"
+                alt="Mike Kirby"
+              /><a
+                href="music_player.html"
+                class="nav-links"
+                id="navMusicPlayer"
+                >Music Player ♪</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/mini-tv.png"
+                class="nav-icons"
+                alt="Cartoonish CRT TV"
+              /><a
+                href="crt_television.html"
+                class="nav-links-active"
+                id="navCRT"
+                >CRT Television</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/crt-television.png"
+                class="nav-icons"
+                alt="CRT TV Realistic"
+              /><a href="others/crt-tv/index.html" class="nav-links-external"
+                >Realistic CRT</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/arcade-games.png"
+                class="nav-icons"
+                alt="Pixel Mario"
+              /><a
+                href="arcade_games.html"
+                class="nav-links"
+                id="navArcadeGames"
+                >Arcade Games</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/sketchbook.png"
+                class="nav-icons"
+                alt="Adeleine from Kirby"
+              /><a href="sketchbook.html" class="nav-links" id="navSketchbook"
+                >Sketchbook</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-categories">
+            <span>Cool Stuff</span>
+            <div class="nav-items">
+              <img
+                src="images/coding-tricks.png"
+                class="nav-icons"
+                alt="HTML5 Logo"
+              /><a
+                href="coding_tricks.html"
+                class="nav-links"
+                id="navCodingTricks"
+                >Coding Tricks</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/all-kirby-games.png"
+                class="nav-icons"
+                alt="Retro Kirby"
+              /><a
+                href="all_kirby_games.html"
+                class="nav-links"
+                id="navAllKirbyGames"
+                >All Kirby Games</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/miscellaneous.png"
+                class="nav-icons"
+                alt="Kirby 64 Painting 2"
+              /><a
+                href="miscellaneous.html"
+                class="nav-links"
+                id="navMiscellaneous"
+                >Miscellaneous</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/gif-collection.png"
+                class="nav-icons"
+                alt="King DeDeDe"
+              /><a
+                href="gif_collection.html"
+                class="nav-links"
+                id="navGifCollection"
+                >GIF Collection</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/guestbook.png"
+                class="nav-icons"
+                alt="Open Book"
+              /><a href="guestbook.html" class="nav-links" id="navGuestbook"
+                >My Guestbook</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-categories">
+            <span>Other Pages</span>
+            <div class="nav-items">
+              <img
+                src="images/monster-hunter-tribute.png"
+                class="nav-icons"
+                alt="Felyne"
+              /><a
+                href="others/mhfu-tribute/index.html"
+                class="nav-links-external"
+                >Monster Hunter</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/minecraft-tribute.png"
+                class="nav-icons"
+                alt="Grass Block"
+              /><a
+                href="others/minecraft-tribute/index.html"
+                class="nav-links-external"
+                >Minecraft</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/wall-e-tribute.png"
+                class="nav-icons"
+                alt="BNL Logo"
+              /><a
+                href="others/wall-e-tribute/home.html"
+                class="nav-links-external"
+                >WALL-E</a
+              >
+            </div>
+            <hr />
+
+            <div class="nav-items">
+              <img
+                src="images/frutigeraeroarchive.png"
+                class="nav-icons"
+                alt="Windows 7 Orb"
+              /><a
+                href="https://frutigeraeroarchive.neocities.org/"
+                class="nav-links-external"
+                >Frutiger Aero</a
+              >
+            </div>
+          </div>
+
+          <!-- Nav Music Player -->
+          <audio id="navMusic">
+            <source src="#" type="audio/mpeg" />
+          </audio>
+          <!-- Music Controls -->
+          <div class="nav-music-div">
+            <div class="nav-music-marquee">
+              <span id="currentSongInfo"
+                ><!-- Current song information will go here --></span
+              >
+            </div>
+            <nav aria-label="Music Player">
+              <div>
+                <button id="navMusicPlay">Play</button>
+                <button id="navMusicPause">Pause</button>
+              </div>
+              <div aria-label="Music Player Media Controls">
+                <button id="navMusicPrevious">Back</button>
+                <button id="navMusicNext">Next</button>
+              </div>
+            </nav>
+          </div>
+        </nav>
+      </aside>
+
+      <!-- Right Aside -->
+      <aside id="rightSiteContent">
+        <div class="aside-ads-container">
+          <span>Cool Posters</span>
+          <img
+            src="images/sidebars/azumanga.jpg"
+            alt="Azumanga Daioh Poster"
+            title="Azumanga Daioh"
+          />
+          <img
+            src="images/sidebars/renge.jpg"
+            alt="Renge Miyauchi Poster"
+            title="Renge Miyauchi"
+          />
+          <img
+            src="images/sidebars/nichijou.jpg"
+            alt="Nichijou Poster"
+            title="Nichijou"
+          />
+          <img
+            src="images/sidebars/kirby_gameboy.jpg"
+            alt="Ad for Kirby Game Boy game"
+            title="Kirby Tilt 'n' Tumble"
+          />
+          <img
+            src="images/sidebars/yui_hirasawa.png"
+            alt="Yui Hirasawa"
+            class="sidebar-character-1"
+            title="Yui Hirasawa"
+          />
+        </div>
+      </aside>
+
+      <!-- Main Page -->
+      <main id="middleContent">
+        <!-- CRT TV Section -->
+        <section id="crtSection">
+          <h1>CRT Television</h1>
+
+          <!-- Contains the television and table -->
+          <div class="crt-tv-container">
+            <!-- Contains the television itself -->
+            <div class="crt-tv-top-container">
+              <!-- Left of the TV -->
+              <div class="crt-tv-left"></div>
+
+              <!-- Middle of the TV -->
+              <div class="crt-tv-middle">
+                <!-- Screen -->
+                <div class="crt-screen-div">
+                  <img src="images/gifs/static.gif" class="crt-static" />
+                  <div id="crtVideo"></div>
+                </div>
+
+                <!-- Bottom of TV -->
+                <img src="images/philips.png" class="crt-branding" />
+                <div class="crt-bottom-buttons">
+                  <button id="crtUpload">Upload</button>
+                  <span class="crt-on-button">•</span>
+                  <span class="crt-off-button">•</span>
+                  <button id="crtReset">Reset</button>
+                  <input
+                    type="url"
+                    id="crtURL"
+                    placeholder="Your URL: https://www.youtube.com/embed/__QdAxqBi5Y?si=FBakao9z10Vv7ROi"
+                    size="10"
+                    required
+                  />
+                </div>
+              </div>
+
+              <!-- Right of the TV -->
+              <div class="crt-tv-right"></div>
+            </div>
+
+            <!-- TV Stand -->
+            <div class="crt-stand-arm"></div>
+            <div class="crt-stand"></div>
+            <div class="crt-stand-bottom"></div>
+
+            <!-- Table top -->
+            <div class="crt-table-top"></div>
+
+            <!-- Table middle -->
+            <div class="crt-table-middle">
+              <div class="crt-table-background">
+                <img src="images/crt-library-1.jpg" />
+                <img src="images/crt-library-2.jpg" />
+                <img src="images/crt-library-3.jpg" />
+                <img src="images/crt-library-4.jpg" />
+                <img src="images/crt-library-5.jpg" />
+                <img src="images/crt-library-6.jpg" />
+                <img src="images/crt-library-7.jpg" />
+                <img src="images/crt-library-8.jpg" />
+              </div>
+              <div class="crt-table-structure"></div>
+              <div class="crt-table-background">
+                <img src="images/crt-library-9.jpg" />
+                <img src="images/crt-library-10.jpg" />
+                <img src="images/crt-library-11.jpg" />
+                <img src="images/crt-library-12.jpg" />
+                <img src="images/crt-library-13.jpg" />
+                <img src="images/crt-library-14.jpg" />
+                <img src="images/crt-library-15.jpg" />
+                <img src="images/crt-library-16.jpg" />
+              </div>
+              <div class="crt-table-structure"></div>
+              <div class="crt-table-background">
+                <img src="images/crt-library-17.jpg" />
+                <img src="images/crt-library-18.jpg" />
+                <img src="images/crt-library-19.jpg" />
+                <img src="images/crt-library-20.jpg" />
+                <img src="images/crt-library-21.jpg" />
+                <img src="images/crt-library-22.jpg" />
+                <img src="images/crt-library-23.jpg" />
+                <img src="images/crt-library-24.jpg" />
+              </div>
+              <div class="crt-table-structure"></div>
+              <div class="crt-table-background">
+                <img src="images/crt-library-25.jpg" />
+                <img src="images/crt-library-26.jpg" />
+                <img src="images/crt-library-27.jpg" />
+                <img src="images/crt-library-28.jpg" />
+                <img src="images/crt-library-29.jpg" />
+                <img src="images/crt-library-30.jpg" />
+                <img src="images/crt-library-31.jpg" />
+                <img src="images/crt-library-32.jpg" />
+              </div>
+            </div>
+
+            <!-- Table bottom -->
+            <div class="crt-table-bottom"></div>
+          </div>
+
+          <!-- What is a CRT -->
+          <div class="crt-text text-containers-main-bg">
+            <h3>What is a CRT?</h3>
+            <p>
+              Cathode-Ray Tube TVs were the norm for a very long time before the
+              rise of LCDs. They work very differently from today's LCD and OLED
+              screen technologies, instead of fixed pixels being lit up by a
+              backlight (or lit themselves on OLED), it's electron guns firing
+              photons on the phosphors that are inside the screen glass creating
+              the image on the screen. Those TVs have the advantage of having no
+              input-lag or ghosting, and handling low-resolution way better than
+              modern screens because of them not having a fixed resolution and
+              the "scan line" effect on some TVs. This is my attempt at
+              recreating the TV I used to have as a kid.
+            </p>
+          </div>
+
+          <!-- CRT Instructions -->
+          <div class="crt-instructions text-containers-main-bg js-content">
+            <h3>Import your Videos</h3>
+            <p>
+              Upload your own (YouTube) video by pasting the "src" URL in the
+              little box under the screen and pressing "Upload".
+            </p>
+            <img src="images/gifs/crt-instructions.gif" />
+          </div>
+        </section>
+      </main>
+
+      <footer id="bottomFooter">
+        <span>2022-2025 &copy;Daniele63</span><br />
+        <a href="mailto:daniele63web@hotmail.com">e-mail</a>
+        <a href="https://ko-fi.com/daniele63">ko-fi</a>
+        <a href="https://spacehey.com/daniele63">spacehey</a>
+        <a href="https://www.bitview.net/user/Daniele">bitview</a>
+        <a href="https://neocities.org/site/daniele63">neocities</a>
+      </footer>
+      <!-- Spacer -->
+      <div id="websiteSpacerBottom"></div>
+    </div>
+    <!-- Javascript -->
+    <script src="javascript/crt-tv.js"></script>
+    <script src="javascript/nav-music.js"></script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+/* Top Container */
+.arcade-div {
+  background-image: url("../images/pixel-background.gif");
+  background-size: cover;
+  background-color: #464eac;
+  border: 1px solid #252d5e;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.253);
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.arcade-right-images {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  right: 200px;
+  bottom: 20px;
+}
+.arcade-right-images img {
+  width: 130px;
+  pointer-events: none;
+}
+.arcade-left-images {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  left: 100px;
+  bottom: 27px;
+}
+.arcade-left-images img {
+  width: 55px;
+  pointer-events: none;
+}
+/* Center */
+.arcade-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 626px;
+  aspect-ratio: 4/3;
+  max-width: 100%;
+}
+.arcade-center iframe {
+  width: 100%;
+  min-height: 100%;
+  filter: saturate(130%), contrast(110%), brightness(100%), blur(0.5px);
+}
+/* Filters */
+.arcade-filters {
+  position: absolute;
+  width: 626px;
+  height: 100%;
+  aspect-ratio: 4/3;
+  pointer-events: none;
+}
+.arcade-filters img {
+  width: 626px;
+  aspect-ratio: 4/3;
+  pointer-events: none;
+}
+#slotMask {
+  opacity: 0.4;
+}
+
+/* Games List Container */
+.arcade-game-list {
+  margin-top: 12px;
+  padding: 10px 10px 2px 10px;
+}
+.arcade-games-div {
+  display: flex;
+  justify-content: space-evenly;
+}
+.arcade-games-rows div {
+  background-color: #2f49c0;
+  border: 1px solid #273da0;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.253);
+  color: #fcfcf2;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  gap: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+.arcade-games-rows div:hover {
+  background-color: #3d5adb;
+  transition-duration: 0.2s;
+}
+.arcade-game-list img {
+  background-color: white;
+  border: 1px solid #78797e;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.253);
+  width: 45px;
+  height: 45px;
+}
+.arcade-game-list span {
+  max-width: 200px;
+}
+
+/* Options Container */
+.arcade-options {
+  margin-top: 12px;
+  padding: 10px;
+  text-align: center;
+}
+.arcade-options button {
+  background-color: #a22f2f;
+  background-image: repeating-linear-gradient(
+      45deg,
+      #b83535 25%,
+      transparent 25%,
+      transparent 75%,
+      #b83535 75%,
+      #b83535
+    ),
+    repeating-linear-gradient(
+      45deg,
+      #b83535 25%,
+      #a22f2f 25%,
+      #a22f2f 75%,
+      #b83535 75%,
+      #b83535
+    );
+  background-position: 0 0, 4px 4px;
+  background-size: 8px 8px;
+  border: 3px solid #812424;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.253);
+  color: #fcfcf2;
+  width: 100%;
+  height: 32px;
+  cursor: pointer;
+}
+.arcade-options button:hover {
+  background-color: #b93737;
+  background-image: repeating-linear-gradient(
+      45deg,
+      #d03c3c 25%,
+      transparent 25%,
+      transparent 75%,
+      #d03c3c 75%,
+      #d03c3c
+    ),
+    repeating-linear-gradient(
+      45deg,
+      #d03c3c 25%,
+      #b93737 25%,
+      #b93737 75%,
+      #d03c3c 75%,
+      #d03c3c
+    );
+  background-position: 0 0, 4px 4px;
+  background-size: 8px 8px;
+}
+
+/* CSS for Phones */
+@media (max-width: 850px) {
+  .arcade-games-div {
+    flex-direction: column;
+  }
+}
+
+/* CSS for Phones */
+@media (max-width: 600px) {
+  .arcade-left-images img {
+    display: none;
+  }
+  .arcade-right-images img {
+    display: none;
+  }
+}

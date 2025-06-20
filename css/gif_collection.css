@@ -1,0 +1,21 @@
+/* Introduction */
+.gif-introduction {
+  padding: 10px 10px 0px 10px;
+  margin-bottom: 12px;
+}
+
+/* Gif containers */
+.gif-divs {
+  padding: 10px;
+  margin-bottom: 12px;
+}
+.gif-divs div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+}
+.gif-divs img {
+  height: 30px;
+  margin: 3px;
+}

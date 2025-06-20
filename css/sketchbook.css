@@ -1,0 +1,186 @@
+/* Paint App Container */
+.paint-container {
+  display: flex;
+  border-radius: 15px;
+  flex-direction: column;
+  background: url("images/paint-wallpaper.html");
+  background-color: #f692a3;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border: 1px solid #ffb2bf;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.253);
+  padding: 15px 15px 15px 15px;
+  height: 600px;
+}
+.paint-heading h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f47489;
+  border: 1px solid #ffb2bf;
+  background-image: none;
+  height: 30px;
+}
+.paint-heading-img-1 {
+  width: 80px;
+  margin-left: 10px;
+  margin-right: -140px;
+  margin-bottom: -10px;
+  z-index: 2;
+}
+.paint-container iframe {
+  background-color: #a0a0a0;
+  border: 1px solid #565656;
+  padding: 9px;
+  height: 100%;
+}
+
+/* Submit Container */
+.paint-gallery-submit-container {
+  margin: 12px 0px;
+  padding: 10px 10px 5px 10px;
+}
+.paint-gallery-submit-container img {
+  margin-top: 5px;
+}
+/* Submit Form */
+#galleryForm {
+  background-color: #3b58d7;
+  background-image: linear-gradient(135deg, #3e5deb 25%, transparent 25%),
+    linear-gradient(225deg, #3e5deb 25%, transparent 25%),
+    linear-gradient(45deg, #3e5deb 25%, transparent 25%),
+    linear-gradient(315deg, #3e5deb 25%, #3b58d7 25%);
+  background-position: 11px 0, 11px 0, 0 0, 0 0;
+  background-size: 11px 11px;
+  background-repeat: repeat;
+  border: 1px solid #1e3599;
+  border-radius: 15px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.253);
+  color: #fcfcf2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  padding: 5px;
+  margin: 15px auto 10px auto;
+}
+#galleryForm input {
+  background-color: #2f49c0;
+  border: 1px solid #273da0;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.253);
+  color: #fcfcf2;
+  margin: 5px 0px 10px 0px;
+  padding: 2px 5px;
+  width: 90%;
+}
+#galleryForm button {
+  background-color: #2f49c0;
+  border: 1px solid #273da0;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.253);
+  color: white;
+  width: 94%;
+  padding: 2px 0px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+#galleryForm button:hover {
+  background-color: #3d5adb;
+  transition-duration: 0.2s;
+}
+#galleryForm img {
+  margin-top: 10px;
+}
+.form-file-input,
+.form-title,
+.form-message {
+  background-color: #2f49c0;
+  border: 1px solid #273da0;
+  color: white;
+}
+.form-title,
+.form-message {
+  width: 90%;
+  margin: 5px 0px;
+}
+
+/* Gallery Container */
+.gallery-container {
+  padding: 10px 10px 12px 10px;
+}
+/* Cards Container */
+.gallery-images-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 12px auto;
+}
+/* Cards */
+.gallery-images-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 230px;
+  padding: 10px;
+  font-size: 0.9em;
+}
+.gallery-images-container h3 {
+  width: 210px;
+  margin-bottom: 5px;
+}
+.gallery-images-container h4 {
+  width: 200px;
+  margin-top: 5px;
+  text-shadow: none;
+}
+/* Drawings */
+.gallery-images-container img {
+  border: 1px solid #8699df;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.253);
+  max-width: 98%;
+}
+/* Uploading dates */
+.gallery-images-container span {
+  color: #ffffff;
+  text-shadow: none;
+}
+.gallery-images-container a {
+  color: #f5e729;
+  text-decoration: underline;
+  text-shadow: none;
+}
+
+/* Div at bottom with thanks */
+.thanks-div {
+  margin-top: 12px;
+}
+.thanks-div p {
+  text-align: center;
+  margin: 0px;
+}
+
+/* CSS for medium small devices */
+@media (max-width: 1150px) {
+  .gallery-images-container div {
+    width: 90%;
+    height: 90%;
+    font-size: 1em;
+  }
+
+  .gallery-images-container h3 {
+    width: 95%;
+  }
+  .gallery-images-container h4 {
+    width: 93%;
+  }
+}
+
+/* CSS for small devices */
+@media (max-width: 580px) {
+  .paint-heading-img-1 {
+    display: none;
+  }
+}

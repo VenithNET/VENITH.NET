@@ -1,0 +1,299 @@
+body {
+  background: url("images/bg.gif");
+  border-top: 1px solid #9e9e9e;
+  margin: 0px;
+  color: #e0d0d0;
+  font-family: Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18.2px;
+}
+
+h2 {
+  color: #ececec;
+  text-shadow: rgb(43, 43, 43) 1px 2px 2px;
+}
+
+a {
+  color: #aaaaff;
+  text-decoration: none;
+}
+
+#topHeader {
+  background: url("images/bg_top.png");
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 230px;
+  font-size: 16px;
+}
+
+/* Logo */
+#topHeader img {
+  width: 247px;
+  margin: 6px 22px 0px -25px;
+}
+
+.logo-div {
+  display: flex;
+  align-items: center;
+}
+
+.top-header-left-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 3px;
+}
+
+.top-header-left-links a {
+  color: white;
+  font-weight: 700;
+}
+
+.top-header-right-links {
+  display: flex;
+  gap: 4px;
+  margin-top: 3px;
+}
+
+.top-header-right-links a {
+  font-weight: 700;
+}
+
+.top-header-right-links span {
+  color: #b9b9b9;
+  font-size: 13px;
+  margin: 1px 0.2px 0px 0px;
+}
+
+#mainContainer {
+  width: 100%;
+}
+
+/* Introduction */
+#homeIntroSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 33px;
+  margin-left: -30px;
+}
+
+/* Left */
+.home-intro-left-div p {
+  width: 622px;
+  margin: 25px auto 0px auto;
+}
+
+/* Right */
+.home-intro-right-div {
+  margin-top: -10px;
+}
+
+.home-intro-right-links-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro-kirby-img {
+  width: 350px;
+  margin-bottom: -20px;
+}
+
+.buy-now {
+  margin-top: 48px;
+}
+
+.home-intro-right-div span {
+  margin-top: 20px;
+}
+
+.home-intro-right-div div {
+  margin-bottom: -5px;
+}
+
+.classic-mc-link {
+  font-size: 0.85em;
+}
+
+.home-intro-right-login {
+  display: none;
+}
+
+/* Content after Intro */
+#homeContentSection {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 33px 0px 0px -40px;
+}
+
+/* Jukebox */
+.jukebox-div {
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 400px;
+  height: 800px;
+}
+
+.jukebox-heading {
+  background: url("images/classic_bg.png");
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.jukebox-heading img {
+  width: 70px;
+  margin-left: 40px;
+}
+
+.jukebox-songs-main-container {
+  display: flex;
+  gap: 20px;
+}
+
+.jukebox-songs-containers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.jukebox-songs-divs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.jukebox-songs-divs audio {
+  width: 182px;
+  height: 40px;
+}
+
+/* Links to my neocities */
+.information-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.information-div div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Videos */
+.nostalgic-videos-div {
+  width: 530px;
+  border: 1px solid gray;
+}
+
+.nostalgic-videos-heading {
+  background: url("images/classic_bg.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nostalgic-videos-heading img {
+  width: 70px;
+}
+
+.nostalgic-videos-container {
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 10px;
+}
+
+.nostalgic-videos-container video {
+  width: 100%;
+}
+
+.nostalgic-videos-container a {
+  margin-top: -10px;
+}
+
+/* Footer */
+#bottomFooter {
+  color: #444444;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+#bottomFooter a {
+  color: #777777;
+}
+
+@media only screen and (max-width: 1020px) {
+  .top-header-right-links {
+    display: none;
+  }
+
+  #homeIntroSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-intro-right-div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .intro-kirby-img {
+    width: 400px;
+    height: 100%;
+    margin-top: 20px;
+    margin-right: 0px;
+  }
+
+  .home-intro-right-login {
+    display: block;
+  }
+
+  .information-div img {
+    display: none;
+  }
+
+  .nostalgic-videos-div {
+    width: 402px;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  #homeIntroSection {
+    margin-left: 0px;
+  }
+
+  #homeContentSection {
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    margin: 33px 0px 0px 0px;
+  }
+
+  .jukebox-div {
+    width: 650px;
+  }
+
+  .jukebox-songs-divs audio {
+    width: 300px;
+  }
+  .nostalgic-videos-div {
+    width: 650px;
+  }
+}

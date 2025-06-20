@@ -7,7 +7,7 @@ div.text {background:rgba(0,0,0,.5);text-align:center;font-size:0.85em}
 div.footer {background:black;font-size:10px}
 
 /* BROKEN CSS:
-div.text h2:before{content:'';height:100%;width:.5rem;left:-1.5rem;background:#EE4B2B;position:absolute;} */
+ *div.text h2:before{content:'';height:100%;width:.5rem;left:-1.5rem;background:#EE4B2B;position:absolute;} */
 
 a {color:red;}
 a:hover {background:red;color:white;}
@@ -16,30 +16,31 @@ div.nav a:hover {background-color:white!important;color:black!important}
 
 IMG {max-width:99%;height:auto;}
 
-    .scrolling-wrapper {
-      display: flex;
-      width: 100%;
-      overflow: hidden; /* Ensures the text scrolls inside the container */
-    }
+.scrolling-wrapper {
+    display: flex;
+    width: 100%;
+    overflow: hidden; /* Ensures the text scrolls inside the container */
+}
 
-    .rainbow-text {
-      font-size: 50px;
-      font-weight: bold;
-      text-transform: uppercase;
-      white-space: nowrap;
-      animation: scroll-text 10s linear infinite;
-      background-image: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
-      background-size: 300% 100%;
-      background-position: 0 0;
-      -webkit-background-clip: text;
-      color: transparent;
-    }
+.rainbow-text {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+    animation: scroll-text 10s linear infinite;
+    background-image: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 300% 100%;
+    background-position: 0 0;
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
-    @keyframes scroll-text {
-      0% {
+@keyframes scroll-text {
+    0% {
         transform: translateX(100%);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
     }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+

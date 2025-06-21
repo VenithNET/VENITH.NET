@@ -162,7 +162,7 @@ body {
   background-size: cover;
   background-color: #698aff;
   font-family: "Roboto", arial, serif;
-  cursor: url("http://www.venith.net/legacy/assets/images/cursor.png"), auto;
+  cursor: url("http://www.venith.net/images/cursor.png"), auto;
   font-size: 14px;
   height: 100vh;
 }
@@ -631,5 +631,5 @@ p {
 }
 a:hover {
   text-decoration: underline;
-  cursor: url("https://frutigeraeroarchive.org/images/cursors/link.cur"), auto;
+  cursor: url("http://www.venith.net/images/cursor.cur"), auto;
 }

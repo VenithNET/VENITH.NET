@@ -1,2 +1,0 @@
-1. Modernize metadata (tags) across all pages.
-2. Fix up Venith-MC webpage.

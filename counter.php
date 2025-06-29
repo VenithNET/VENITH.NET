@@ -3,7 +3,8 @@
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
 
-$counterFile = 'counter_data.json';
+// Use absolute path for counter file inside /var/www
+$counterFile = '/var/www/counter_data.json';
 
 // Initialize if file doesn't exist
 if (!file_exists($counterFile)) {
@@ -28,15 +29,15 @@ file_put_contents($counterFile, json_encode($data));
 // Build response
 $response = [
     "result" => "success",
-    "info" => [
-        "sitename" => "venith",
-        "views" => $data['views'],
-        "hits" => $data['hits'],
-        "created_at" => $data['created_at'],
-        "last_updated" => $data['last_updated'],
-        "domain" => "venith.net",
-        "tags" => ["kirby", "2000s", "music", "personal", "90s"]
-    ]
+"info" => [
+    "sitename" => "venith",
+"views" => $data['views'],
+"hits" => $data['hits'],
+"created_at" => $data['created_at'],
+"last_updated" => $data['last_updated'],
+"domain" => "venith.net",
+"tags" => ["kirby", "2000s", "music", "personal", "90s"]
+]
 ];
 
 echo json_encode($response, JSON_PRETTY_PRINT);

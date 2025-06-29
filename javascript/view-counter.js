@@ -20,7 +20,7 @@ xhttp.onreadystatechange = function () {
 };
 xhttp.open(
   "GET",
-  "https://venith.net/counter.php?sitename=venith",
+  "https://www.venith.net/counter.php?sitename=venith",
   true
 );
 xhttp.send();

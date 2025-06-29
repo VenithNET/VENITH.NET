@@ -20,7 +20,7 @@ xhttp.onreadystatechange = function () {
 };
 xhttp.open(
   "GET",
-  "https://weirdscifi.ratiosemper.com/neocities.php?sitename=daniele63",
+  "https://venith.net/counter.php?sitename=venith",
   true
 );
 xhttp.send();

@@ -1,5 +1,7 @@
 <?php
-header('Content-Type: application/json');
+// Allow all origins (or replace * with specific domain)
+header("Access-Control-Allow-Origin: *");
+header("Content-Type: application/json");
 
 $counterFile = 'counter_data.json';
 

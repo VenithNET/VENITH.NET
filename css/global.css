@@ -198,7 +198,7 @@ h4 {
 }
 a {
   color: #1d38ff;
-  cursor: url("images/pointer.html"), pointer;
+  cursor: url("#"), pointer;
   text-decoration: none;
 }
 a:hover {

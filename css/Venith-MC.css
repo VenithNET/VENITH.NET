@@ -669,6 +669,7 @@ body {
     padding: 16px;
     width:auto;
     background-color: #212529;
+    border-radius: var(--roundness)
 }
 
 
